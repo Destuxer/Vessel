@@ -5,4 +5,4 @@ USER root
 RUN apt-get update && apt-get install -y \
 libsdl2-dev \
 libsdl2-image-dev \
-libglfw-dev
+libglfw3-dev
