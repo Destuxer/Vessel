@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/workspace/BlackBlood/build",
+  "command": "/bin/g++-9   -g -o CMakeFiles/Mylib.dir/src/Brainchild.cpp.o -c /workspace/BlackBlood/src/Brainchild.cpp",
+  "file": "/workspace/BlackBlood/src/Brainchild.cpp"
+}
+]
