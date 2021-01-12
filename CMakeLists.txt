@@ -4,8 +4,6 @@ set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 include(CTest)
 enable_testing()
 
-add_library(Mylib ${SOURCE_DIR}/Brainchild.cpp)
-
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
