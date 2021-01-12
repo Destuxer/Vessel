@@ -4,4 +4,4 @@ USER root
 
 RUN apt-get update && apt-get install -y \
 libglfw3-dev \
-libGL
+libgl1
