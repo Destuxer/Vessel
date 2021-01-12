@@ -1,0 +1,1 @@
+/bin/g++-9 -g -rdynamic CMakeFiles/DryBlood.dir/src/Application/Application.cpp.o -o DryBlood  -lglfw 

@@ -308,6 +308,12 @@ DryBlood_SOURCE_DIR:STATIC=/workspace/BlackBlood
 //Path to a program.
 GITCOMMAND:FILEPATH=/usr/bin/git
 
+//Path to a file.
+GLFW3_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+GLFW3_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libglfw.so
+
 //Path to a program.
 HGCOMMAND:FILEPATH=/usr/bin/hg
 
@@ -562,6 +568,8 @@ CVSCOMMAND-ADVANCED:INTERNAL=1
 CVS_UPDATE_OPTIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding GLFW3
+FIND_PACKAGE_MESSAGE_DETAILS_GLFW3:INTERNAL=[/usr/lib/x86_64-linux-gnu/libglfw.so][/usr/include][v()]
 //Details about finding SDL2
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread][/usr/include/SDL2][v()]
 //Details about finding SDL2_image
@@ -584,7 +592,7 @@ P4COMMAND-ADVANCED:INTERNAL=1
 SDL2_IMAGE_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SDL2_IMAGE_LIBRARY
 SDL2_IMAGE_LIBRARY-ADVANCED:INTERNAL=1
-SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread;-lpthread;-lpthread;-lpthread
+SDL2_LIBRARY_TEMP:INTERNAL=/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2main.a;/usr/lib/x86_64-linux-gnu/libSDL2.so;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread;-lpthread
 //ADVANCED property for variable: SITE
 SITE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SLURM_SBATCH_COMMAND

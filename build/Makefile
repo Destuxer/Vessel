@@ -332,6 +332,19 @@ ContinuousCoverage/fast:
 .PHONY : ContinuousCoverage/fast
 
 #=============================================================================
+# Target rules for targets named DryBlood
+
+# Build rule for target.
+DryBlood: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DryBlood
+.PHONY : DryBlood
+
+# fast build rule for target.
+DryBlood/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DryBlood.dir/build.make CMakeFiles/DryBlood.dir/build
+.PHONY : DryBlood/fast
+
+#=============================================================================
 # Target rules for targets named ExperimentalConfigure
 
 # Build rule for target.
@@ -436,19 +449,6 @@ ExperimentalStart/fast:
 .PHONY : ExperimentalStart/fast
 
 #=============================================================================
-# Target rules for targets named Mylib
-
-# Build rule for target.
-Mylib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Mylib
-.PHONY : Mylib
-
-# fast build rule for target.
-Mylib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/build
-.PHONY : Mylib/fast
-
-#=============================================================================
 # Target rules for targets named NightlyBuild
 
 # Build rule for target.
@@ -539,32 +539,32 @@ ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-src/Brainchild.o: src/Brainchild.cpp.o
+src/Application/Application.o: src/Application/Application.cpp.o
 
-.PHONY : src/Brainchild.o
+.PHONY : src/Application/Application.o
 
 # target to build an object file
-src/Brainchild.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/src/Brainchild.cpp.o
-.PHONY : src/Brainchild.cpp.o
+src/Application/Application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DryBlood.dir/build.make CMakeFiles/DryBlood.dir/src/Application/Application.cpp.o
+.PHONY : src/Application/Application.cpp.o
 
-src/Brainchild.i: src/Brainchild.cpp.i
+src/Application/Application.i: src/Application/Application.cpp.i
 
-.PHONY : src/Brainchild.i
+.PHONY : src/Application/Application.i
 
 # target to preprocess a source file
-src/Brainchild.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/src/Brainchild.cpp.i
-.PHONY : src/Brainchild.cpp.i
+src/Application/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DryBlood.dir/build.make CMakeFiles/DryBlood.dir/src/Application/Application.cpp.i
+.PHONY : src/Application/Application.cpp.i
 
-src/Brainchild.s: src/Brainchild.cpp.s
+src/Application/Application.s: src/Application/Application.cpp.s
 
-.PHONY : src/Brainchild.s
+.PHONY : src/Application/Application.s
 
 # target to generate assembly for a file
-src/Brainchild.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mylib.dir/build.make CMakeFiles/Mylib.dir/src/Brainchild.cpp.s
-.PHONY : src/Brainchild.cpp.s
+src/Application/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DryBlood.dir/build.make CMakeFiles/DryBlood.dir/src/Application/Application.cpp.s
+.PHONY : src/Application/Application.cpp.s
 
 # Help Target
 help:
@@ -605,10 +605,10 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... Mylib"
-	@echo "... src/Brainchild.o"
-	@echo "... src/Brainchild.i"
-	@echo "... src/Brainchild.s"
+	@echo "... DryBlood"
+	@echo "... src/Application/Application.o"
+	@echo "... src/Application/Application.i"
+	@echo "... src/Application/Application.s"
 .PHONY : help
 
 
