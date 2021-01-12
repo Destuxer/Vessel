@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full-vnc
 
-USER root
+USER gitpod
 
 RUN apt-get update && apt-get install -y \
 libsdl2-dev \
