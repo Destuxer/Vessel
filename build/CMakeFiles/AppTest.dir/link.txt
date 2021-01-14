@@ -1,0 +1,1 @@
+/bin/g++-9 -g -rdynamic CMakeFiles/AppTest.dir/AppTest.cpp.o -o AppTest  libVessel.a -lglfw 

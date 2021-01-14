@@ -67,10 +67,10 @@ RM = /home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/BlackBlood
+CMAKE_SOURCE_DIR = /workspace/Vessel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/BlackBlood/build
+CMAKE_BINARY_DIR = /workspace/Vessel/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,7 +100,7 @@ test/fast: test
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cpack --config ./CPackSourceConfig.cmake /workspace/BlackBlood/build/CPackSourceConfig.cmake
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cpack --config ./CPackSourceConfig.cmake /workspace/Vessel/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -132,9 +132,9 @@ package/fast: package
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/BlackBlood/build/CMakeFiles /workspace/BlackBlood/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/Vessel/build/CMakeFiles /workspace/Vessel/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/BlackBlood/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/Vessel/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -161,6 +161,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named AppTest
+
+# Build rule for target.
+AppTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AppTest
+.PHONY : AppTest
+
+# fast build rule for target.
+AppTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/build
+.PHONY : AppTest/fast
 
 #=============================================================================
 # Target rules for targets named NightlyMemCheck
@@ -330,19 +343,6 @@ ContinuousCoverage: cmake_check_build_system
 ContinuousCoverage/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousCoverage.dir/build.make CMakeFiles/ContinuousCoverage.dir/build
 .PHONY : ContinuousCoverage/fast
-
-#=============================================================================
-# Target rules for targets named DryBlood
-
-# Build rule for target.
-DryBlood: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DryBlood
-.PHONY : DryBlood
-
-# fast build rule for target.
-DryBlood/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DryBlood.dir/build.make CMakeFiles/DryBlood.dir/build
-.PHONY : DryBlood/fast
 
 #=============================================================================
 # Target rules for targets named ExperimentalConfigure
@@ -539,32 +539,144 @@ ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-src/Application/Application.o: src/Application/Application.cpp.o
+#=============================================================================
+# Target rules for targets named Vessel
 
-.PHONY : src/Application/Application.o
+# Build rule for target.
+Vessel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Vessel
+.PHONY : Vessel
+
+# fast build rule for target.
+Vessel/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/build
+.PHONY : Vessel/fast
+
+AppTest.o: AppTest.cpp.o
+
+.PHONY : AppTest.o
 
 # target to build an object file
-src/Application/Application.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DryBlood.dir/build.make CMakeFiles/DryBlood.dir/src/Application/Application.cpp.o
-.PHONY : src/Application/Application.cpp.o
+AppTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/AppTest.cpp.o
+.PHONY : AppTest.cpp.o
 
-src/Application/Application.i: src/Application/Application.cpp.i
+AppTest.i: AppTest.cpp.i
 
-.PHONY : src/Application/Application.i
+.PHONY : AppTest.i
 
 # target to preprocess a source file
-src/Application/Application.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DryBlood.dir/build.make CMakeFiles/DryBlood.dir/src/Application/Application.cpp.i
-.PHONY : src/Application/Application.cpp.i
+AppTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/AppTest.cpp.i
+.PHONY : AppTest.cpp.i
 
-src/Application/Application.s: src/Application/Application.cpp.s
+AppTest.s: AppTest.cpp.s
 
-.PHONY : src/Application/Application.s
+.PHONY : AppTest.s
 
 # target to generate assembly for a file
-src/Application/Application.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DryBlood.dir/build.make CMakeFiles/DryBlood.dir/src/Application/Application.cpp.s
-.PHONY : src/Application/Application.cpp.s
+AppTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/AppTest.cpp.s
+.PHONY : AppTest.cpp.s
+
+# target to build an object file
+cmake_pch.hxx.gch:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/cmake_pch.hxx.gch
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/cmake_pch.hxx.gch
+.PHONY : cmake_pch.hxx.gch
+
+# target to preprocess a source file
+cmake_pch.hxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/cmake_pch.hxx.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/cmake_pch.hxx.i
+.PHONY : cmake_pch.hxx.i
+
+# target to generate assembly for a file
+cmake_pch.hxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/cmake_pch.hxx.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/cmake_pch.hxx.s
+.PHONY : cmake_pch.hxx.s
+
+src/Core/Application.o: src/Core/Application.cpp.o
+
+.PHONY : src/Core/Application.o
+
+# target to build an object file
+src/Core/Application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
+.PHONY : src/Core/Application.cpp.o
+
+src/Core/Application.i: src/Core/Application.cpp.i
+
+.PHONY : src/Core/Application.i
+
+# target to preprocess a source file
+src/Core/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Application.cpp.i
+.PHONY : src/Core/Application.cpp.i
+
+src/Core/Application.s: src/Core/Application.cpp.s
+
+.PHONY : src/Core/Application.s
+
+# target to generate assembly for a file
+src/Core/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Application.cpp.s
+.PHONY : src/Core/Application.cpp.s
+
+src/Core/Log.o: src/Core/Log.cpp.o
+
+.PHONY : src/Core/Log.o
+
+# target to build an object file
+src/Core/Log.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Log.cpp.o
+.PHONY : src/Core/Log.cpp.o
+
+src/Core/Log.i: src/Core/Log.cpp.i
+
+.PHONY : src/Core/Log.i
+
+# target to preprocess a source file
+src/Core/Log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Log.cpp.i
+.PHONY : src/Core/Log.cpp.i
+
+src/Core/Log.s: src/Core/Log.cpp.s
+
+.PHONY : src/Core/Log.s
+
+# target to generate assembly for a file
+src/Core/Log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Log.cpp.s
+.PHONY : src/Core/Log.cpp.s
+
+src/Platform/WindowsWindow.o: src/Platform/WindowsWindow.cpp.o
+
+.PHONY : src/Platform/WindowsWindow.o
+
+# target to build an object file
+src/Platform/WindowsWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o
+.PHONY : src/Platform/WindowsWindow.cpp.o
+
+src/Platform/WindowsWindow.i: src/Platform/WindowsWindow.cpp.i
+
+.PHONY : src/Platform/WindowsWindow.i
+
+# target to preprocess a source file
+src/Platform/WindowsWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.i
+.PHONY : src/Platform/WindowsWindow.cpp.i
+
+src/Platform/WindowsWindow.s: src/Platform/WindowsWindow.cpp.s
+
+.PHONY : src/Platform/WindowsWindow.s
+
+# target to generate assembly for a file
+src/Platform/WindowsWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.s
+.PHONY : src/Platform/WindowsWindow.cpp.s
 
 # Help Target
 help:
@@ -605,10 +717,23 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... DryBlood"
-	@echo "... src/Application/Application.o"
-	@echo "... src/Application/Application.i"
-	@echo "... src/Application/Application.s"
+	@echo "... AppTest"
+	@echo "... Vessel"
+	@echo "... AppTest.o"
+	@echo "... AppTest.i"
+	@echo "... AppTest.s"
+	@echo "... cmake_pch.hxx.gch"
+	@echo "... cmake_pch.hxx.i"
+	@echo "... cmake_pch.hxx.s"
+	@echo "... src/Core/Application.o"
+	@echo "... src/Core/Application.i"
+	@echo "... src/Core/Application.s"
+	@echo "... src/Core/Log.o"
+	@echo "... src/Core/Log.i"
+	@echo "... src/Core/Log.s"
+	@echo "... src/Platform/WindowsWindow.o"
+	@echo "... src/Platform/WindowsWindow.i"
+	@echo "... src/Platform/WindowsWindow.s"
 .PHONY : help
 
 

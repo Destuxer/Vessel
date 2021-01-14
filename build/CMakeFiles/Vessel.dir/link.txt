@@ -1,0 +1,2 @@
+/bin/ar qc libVessel.a CMakeFiles/Vessel.dir/src/Core/Application.cpp.o CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o CMakeFiles/Vessel.dir/src/Core/Log.cpp.o
+/bin/ranlib libVessel.a

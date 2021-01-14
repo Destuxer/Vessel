@@ -1,2 +1,0 @@
-/bin/ar qc libMylib.a CMakeFiles/Mylib.dir/src/Brainchild.cpp.o
-/bin/ranlib libMylib.a

@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /workspace/BlackBlood
-BuildDirectory: /workspace/BlackBlood/build
+SourceDirectory: /workspace/Vessel
+BuildDirectory: /workspace/Vessel/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: ws-96fdebc1-1f90-4691-aeb0-c6d5ece44635
+Site: ws-af4e0a8c-5a0a-4a91-bcab-1344b0e24f5e
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-g++-9
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake" "/workspace/BlackBlood"
+ConfigureCommand: "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake" "/workspace/Vessel"
 MakeCommand: /home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
