@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.19.0)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -16,6 +16,9 @@ include(CPack)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR})
 
+find_package(OpenGL REQUIRED)
+include_directories(${PROJECT_NAME} PRIVATE ${OPENGL_INCLUDE_DIR})
+
 find_package(GLFW3 REQUIRED)
 include_directories(${PROJECT_NAME} PRIVATE ${GLFW3_INCLUDE_DIR})
 
@@ -25,7 +28,8 @@ file(GLOB SOURCES
 )
 
 add_library(${PROJECT_NAME} src/Core/Application.cpp src/Platform/WindowsWindow.cpp src/Core/Log.cpp)
-target_link_libraries(${PROJECT_NAME} ${GLFW3_LIBRARY})
+
+target_link_libraries(${PROJECT_NAME} ${GLFW3_LIBRARY} ${OPENGL_LIBRARIES})
 include_directories(${PROJECT_NAME} PRIVATE src/ PRIVATE include/)
 target_precompile_headers(${PROJECT_NAME} PUBLIC src/pch.h)
 

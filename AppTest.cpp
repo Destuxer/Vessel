@@ -1,5 +1,16 @@
-#include "src/pch.h"
+#include "Core/Application.h"
+#include <Vessel.h>
 
-void main {
-    
+class Sandbox : public Vessel::Application {
+public:
+    Sandbox() {
+
+    }
+    ~Sandbox() {
+
+    }
+};
+
+Vessel::Application* Vessel::CreateApplication() {
+    return new Sandbox();
 }

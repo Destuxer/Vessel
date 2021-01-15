@@ -27,7 +27,7 @@ namespace Vessel {
         m_Data.Width = props.Width;
         m_Data.Height = props.Height;
 
-        VSL_CORE_INFO("Creating Window: {0} ({1}, {2})", props.Title, props.Height, props.Width)
+        VSL_CORE_INFO("Creating Window: {0} ({1}, {2})", props.Title, props.Height, props.Width);
         if(!s_GLFWInitialized){
             int success = glfwInit();
             VSL_ASSERT(success,"Could not initialize GLFW!");
