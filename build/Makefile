@@ -176,6 +176,32 @@ AppTest/fast:
 .PHONY : AppTest/fast
 
 #=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
+#=============================================================================
+# Target rules for targets named Glad
+
+# Build rule for target.
+Glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Glad
+.PHONY : Glad
+
+# fast build rule for target.
+Glad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/build
+.PHONY : Glad/fast
+
+#=============================================================================
 # Target rules for targets named NightlyMemCheck
 
 # Build rule for target.
@@ -597,6 +623,141 @@ cmake_pch.hxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/cmake_pch.hxx.s
 .PHONY : cmake_pch.hxx.s
 
+glad/glad.o: glad/glad.c.o
+
+.PHONY : glad/glad.o
+
+# target to build an object file
+glad/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/glad/glad.c.o
+.PHONY : glad/glad.c.o
+
+glad/glad.i: glad/glad.c.i
+
+.PHONY : glad/glad.i
+
+# target to preprocess a source file
+glad/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/glad/glad.c.i
+.PHONY : glad/glad.c.i
+
+glad/glad.s: glad/glad.c.s
+
+.PHONY : glad/glad.s
+
+# target to generate assembly for a file
+glad/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/glad/glad.c.s
+.PHONY : glad/glad.c.s
+
+imgui/imgui.o: imgui/imgui.cpp.o
+
+.PHONY : imgui/imgui.o
+
+# target to build an object file
+imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui.cpp.o
+.PHONY : imgui/imgui.cpp.o
+
+imgui/imgui.i: imgui/imgui.cpp.i
+
+.PHONY : imgui/imgui.i
+
+# target to preprocess a source file
+imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui.cpp.i
+.PHONY : imgui/imgui.cpp.i
+
+imgui/imgui.s: imgui/imgui.cpp.s
+
+.PHONY : imgui/imgui.s
+
+# target to generate assembly for a file
+imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui.cpp.s
+.PHONY : imgui/imgui.cpp.s
+
+imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
+
+.PHONY : imgui/imgui_demo.o
+
+# target to build an object file
+imgui/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
+.PHONY : imgui/imgui_demo.cpp.o
+
+imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
+
+.PHONY : imgui/imgui_demo.i
+
+# target to preprocess a source file
+imgui/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i
+.PHONY : imgui/imgui_demo.cpp.i
+
+imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
+
+.PHONY : imgui/imgui_demo.s
+
+# target to generate assembly for a file
+imgui/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s
+.PHONY : imgui/imgui_demo.cpp.s
+
+imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
+
+.PHONY : imgui/imgui_draw.o
+
+# target to build an object file
+imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
+.PHONY : imgui/imgui_draw.cpp.o
+
+imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
+
+.PHONY : imgui/imgui_draw.i
+
+# target to preprocess a source file
+imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i
+.PHONY : imgui/imgui_draw.cpp.i
+
+imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
+
+.PHONY : imgui/imgui_draw.s
+
+# target to generate assembly for a file
+imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s
+.PHONY : imgui/imgui_draw.cpp.s
+
+imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
+
+.PHONY : imgui/imgui_widgets.o
+
+# target to build an object file
+imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
+.PHONY : imgui/imgui_widgets.cpp.o
+
+imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
+
+.PHONY : imgui/imgui_widgets.i
+
+# target to preprocess a source file
+imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i
+.PHONY : imgui/imgui_widgets.cpp.i
+
+imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
+
+.PHONY : imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s
+.PHONY : imgui/imgui_widgets.cpp.s
+
 src/Core/Application.o: src/Core/Application.cpp.o
 
 .PHONY : src/Core/Application.o
@@ -623,6 +784,60 @@ src/Core/Application.s: src/Core/Application.cpp.s
 src/Core/Application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Application.cpp.s
 .PHONY : src/Core/Application.cpp.s
+
+src/Core/Layer.o: src/Core/Layer.cpp.o
+
+.PHONY : src/Core/Layer.o
+
+# target to build an object file
+src/Core/Layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o
+.PHONY : src/Core/Layer.cpp.o
+
+src/Core/Layer.i: src/Core/Layer.cpp.i
+
+.PHONY : src/Core/Layer.i
+
+# target to preprocess a source file
+src/Core/Layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Layer.cpp.i
+.PHONY : src/Core/Layer.cpp.i
+
+src/Core/Layer.s: src/Core/Layer.cpp.s
+
+.PHONY : src/Core/Layer.s
+
+# target to generate assembly for a file
+src/Core/Layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Layer.cpp.s
+.PHONY : src/Core/Layer.cpp.s
+
+src/Core/LayerStack.o: src/Core/LayerStack.cpp.o
+
+.PHONY : src/Core/LayerStack.o
+
+# target to build an object file
+src/Core/LayerStack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o
+.PHONY : src/Core/LayerStack.cpp.o
+
+src/Core/LayerStack.i: src/Core/LayerStack.cpp.i
+
+.PHONY : src/Core/LayerStack.i
+
+# target to preprocess a source file
+src/Core/LayerStack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.i
+.PHONY : src/Core/LayerStack.cpp.i
+
+src/Core/LayerStack.s: src/Core/LayerStack.cpp.s
+
+.PHONY : src/Core/LayerStack.s
+
+# target to generate assembly for a file
+src/Core/LayerStack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.s
+.PHONY : src/Core/LayerStack.cpp.s
 
 src/Core/Log.o: src/Core/Log.cpp.o
 
@@ -718,16 +933,39 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... AppTest"
+	@echo "... Glad"
 	@echo "... Vessel"
+	@echo "... imgui"
 	@echo "... AppTest.o"
 	@echo "... AppTest.i"
 	@echo "... AppTest.s"
 	@echo "... cmake_pch.hxx.gch"
 	@echo "... cmake_pch.hxx.i"
 	@echo "... cmake_pch.hxx.s"
+	@echo "... glad/glad.o"
+	@echo "... glad/glad.i"
+	@echo "... glad/glad.s"
+	@echo "... imgui/imgui.o"
+	@echo "... imgui/imgui.i"
+	@echo "... imgui/imgui.s"
+	@echo "... imgui/imgui_demo.o"
+	@echo "... imgui/imgui_demo.i"
+	@echo "... imgui/imgui_demo.s"
+	@echo "... imgui/imgui_draw.o"
+	@echo "... imgui/imgui_draw.i"
+	@echo "... imgui/imgui_draw.s"
+	@echo "... imgui/imgui_widgets.o"
+	@echo "... imgui/imgui_widgets.i"
+	@echo "... imgui/imgui_widgets.s"
 	@echo "... src/Core/Application.o"
 	@echo "... src/Core/Application.i"
 	@echo "... src/Core/Application.s"
+	@echo "... src/Core/Layer.o"
+	@echo "... src/Core/Layer.i"
+	@echo "... src/Core/Layer.s"
+	@echo "... src/Core/LayerStack.o"
+	@echo "... src/Core/LayerStack.i"
+	@echo "... src/Core/LayerStack.s"
 	@echo "... src/Core/Log.o"
 	@echo "... src/Core/Log.i"
 	@echo "... src/Core/Log.s"

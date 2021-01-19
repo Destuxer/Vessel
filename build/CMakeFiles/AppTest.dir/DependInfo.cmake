@@ -11,6 +11,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "GLFW_INCLUDE_NONE"
+  )
+
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Vessel"
@@ -22,6 +27,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/workspace/Vessel/build/CMakeFiles/Vessel.dir/DependInfo.cmake"
+  "/workspace/Vessel/build/CMakeFiles/Glad.dir/DependInfo.cmake"
+  "/workspace/Vessel/build/CMakeFiles/imgui.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

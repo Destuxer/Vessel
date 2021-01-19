@@ -135,27 +135,65 @@ CMakeFiles/Vessel.dir/src/Core/Log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Vessel.dir/src/Core/Log.cpp.s"
 	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -S /workspace/Vessel/src/Core/Log.cpp -o CMakeFiles/Vessel.dir/src/Core/Log.cpp.s
 
+CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o: CMakeFiles/Vessel.dir/flags.make
+CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o: ../src/Core/Layer.cpp
+CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o: CMakeFiles/Vessel.dir/cmake_pch.hxx
+CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o: CMakeFiles/Vessel.dir/cmake_pch.hxx.gch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o"
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o -c /workspace/Vessel/src/Core/Layer.cpp
+
+CMakeFiles/Vessel.dir/src/Core/Layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Vessel.dir/src/Core/Layer.cpp.i"
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -E /workspace/Vessel/src/Core/Layer.cpp > CMakeFiles/Vessel.dir/src/Core/Layer.cpp.i
+
+CMakeFiles/Vessel.dir/src/Core/Layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Vessel.dir/src/Core/Layer.cpp.s"
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -S /workspace/Vessel/src/Core/Layer.cpp -o CMakeFiles/Vessel.dir/src/Core/Layer.cpp.s
+
+CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o: CMakeFiles/Vessel.dir/flags.make
+CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o: ../src/Core/LayerStack.cpp
+CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o: CMakeFiles/Vessel.dir/cmake_pch.hxx
+CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o: CMakeFiles/Vessel.dir/cmake_pch.hxx.gch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o"
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o -c /workspace/Vessel/src/Core/LayerStack.cpp
+
+CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.i"
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -E /workspace/Vessel/src/Core/LayerStack.cpp > CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.i
+
+CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.s"
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -S /workspace/Vessel/src/Core/LayerStack.cpp -o CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.s
+
 # Object files for target Vessel
 Vessel_OBJECTS = \
 "CMakeFiles/Vessel.dir/src/Core/Application.cpp.o" \
 "CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o" \
-"CMakeFiles/Vessel.dir/src/Core/Log.cpp.o"
+"CMakeFiles/Vessel.dir/src/Core/Log.cpp.o" \
+"CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o" \
+"CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o"
 
 # External object files for target Vessel
 Vessel_EXTERNAL_OBJECTS =
 
-libVessel.a: CMakeFiles/Vessel.dir/cmake_pch.hxx.gch
-libVessel.a: CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
-libVessel.a: CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o
-libVessel.a: CMakeFiles/Vessel.dir/src/Core/Log.cpp.o
-libVessel.a: CMakeFiles/Vessel.dir/build.make
-libVessel.a: CMakeFiles/Vessel.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libVessel.a"
-	$(CMAKE_COMMAND) -P CMakeFiles/Vessel.dir/cmake_clean_target.cmake
+libVessel.so: CMakeFiles/Vessel.dir/cmake_pch.hxx.gch
+libVessel.so: CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
+libVessel.so: CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o
+libVessel.so: CMakeFiles/Vessel.dir/src/Core/Log.cpp.o
+libVessel.so: CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o
+libVessel.so: CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o
+libVessel.so: CMakeFiles/Vessel.dir/build.make
+libVessel.so: /usr/lib/x86_64-linux-gnu/libglfw.so
+libVessel.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+libVessel.so: /usr/lib/x86_64-linux-gnu/libGLX.so
+libVessel.so: libGlad.so
+libVessel.so: libimgui.a
+libVessel.so: CMakeFiles/Vessel.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libVessel.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Vessel.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Vessel.dir/build: libVessel.a
+CMakeFiles/Vessel.dir/build: libVessel.so
 
 .PHONY : CMakeFiles/Vessel.dir/build
 

@@ -1,0 +1,1 @@
+/bin/gcc-9 -fPIC -O2 -g -DNDEBUG -shared -Wl,-soname,libGlad.so -o libGlad.so CMakeFiles/Glad.dir/glad/glad.c.o 

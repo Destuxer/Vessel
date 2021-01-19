@@ -6,26 +6,17 @@ CMakeFiles/Vessel.dir/cmake_pch.hxx.gch
  /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx.cxx
  /workspace/Vessel/src/pch.h
 CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
- ../include/spdlog/common-inl.h
+ ../include/KHR/khrplatform.h
+ ../include/glad/glad.h
  ../include/spdlog/common.h
- ../include/spdlog/details/backtracer-inl.h
- ../include/spdlog/details/backtracer.h
- ../include/spdlog/details/circular_q.h
- ../include/spdlog/details/console_globals.h
  ../include/spdlog/details/fmt_helper.h
- ../include/spdlog/details/log_msg-inl.h
  ../include/spdlog/details/log_msg.h
- ../include/spdlog/details/log_msg_buffer-inl.h
- ../include/spdlog/details/log_msg_buffer.h
+ ../include/spdlog/details/logger_impl.h
  ../include/spdlog/details/null_mutex.h
- ../include/spdlog/details/os-inl.h
  ../include/spdlog/details/os.h
- ../include/spdlog/details/periodic_worker-inl.h
+ ../include/spdlog/details/pattern_formatter.h
  ../include/spdlog/details/periodic_worker.h
- ../include/spdlog/details/registry-inl.h
  ../include/spdlog/details/registry.h
- ../include/spdlog/details/synchronous_factory.h
- ../include/spdlog/details/windows_include.h
  ../include/spdlog/fmt/bundled/core.h
  ../include/spdlog/fmt/bundled/format-inl.h
  ../include/spdlog/fmt/bundled/format.h
@@ -33,17 +24,8 @@ CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
  ../include/spdlog/fmt/fmt.h
  ../include/spdlog/fmt/ostr.h
  ../include/spdlog/formatter.h
- ../include/spdlog/logger-inl.h
  ../include/spdlog/logger.h
- ../include/spdlog/pattern_formatter-inl.h
- ../include/spdlog/pattern_formatter.h
- ../include/spdlog/sinks/ansicolor_sink-inl.h
- ../include/spdlog/sinks/ansicolor_sink.h
- ../include/spdlog/sinks/sink-inl.h
  ../include/spdlog/sinks/sink.h
- ../include/spdlog/sinks/wincolor_sink-inl.h
- ../include/spdlog/sinks/wincolor_sink.h
- ../include/spdlog/spdlog-inl.h
  ../include/spdlog/spdlog.h
  ../include/spdlog/tweakme.h
  ../include/spdlog/version.h
@@ -55,32 +37,42 @@ CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
  /workspace/Vessel/src/Core/Application.cpp
  /workspace/Vessel/src/Core/Application.h
  /workspace/Vessel/src/Core/Base.h
+ /workspace/Vessel/src/Core/Layer.h
+ /workspace/Vessel/src/Core/LayerStack.h
  /workspace/Vessel/src/Core/Log.h
  /workspace/Vessel/src/Core/Window.h
  /workspace/Vessel/src/pch.h
+CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o
+ ../src/Core/Base.h
+ ../src/Events/Event.h
+ ../src/pch.h
+ /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
+ /workspace/Vessel/src/Core/Base.h
+ /workspace/Vessel/src/Core/Layer.cpp
+ /workspace/Vessel/src/Core/Layer.h
+ /workspace/Vessel/src/pch.h
+CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o
+ ../src/Core/Base.h
+ ../src/Events/Event.h
+ ../src/pch.h
+ /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
+ /workspace/Vessel/src/Core/Base.h
+ /workspace/Vessel/src/Core/Layer.h
+ /workspace/Vessel/src/Core/LayerStack.cpp
+ /workspace/Vessel/src/Core/LayerStack.h
+ /workspace/Vessel/src/pch.h
 CMakeFiles/Vessel.dir/src/Core/Log.cpp.o
- ../include/spdlog/common-inl.h
  ../include/spdlog/common.h
- ../include/spdlog/details/backtracer-inl.h
- ../include/spdlog/details/backtracer.h
- ../include/spdlog/details/circular_q.h
  ../include/spdlog/details/console_globals.h
- ../include/spdlog/details/file_helper-inl.h
  ../include/spdlog/details/file_helper.h
  ../include/spdlog/details/fmt_helper.h
- ../include/spdlog/details/log_msg-inl.h
  ../include/spdlog/details/log_msg.h
- ../include/spdlog/details/log_msg_buffer-inl.h
- ../include/spdlog/details/log_msg_buffer.h
+ ../include/spdlog/details/logger_impl.h
  ../include/spdlog/details/null_mutex.h
- ../include/spdlog/details/os-inl.h
  ../include/spdlog/details/os.h
- ../include/spdlog/details/periodic_worker-inl.h
+ ../include/spdlog/details/pattern_formatter.h
  ../include/spdlog/details/periodic_worker.h
- ../include/spdlog/details/registry-inl.h
  ../include/spdlog/details/registry.h
- ../include/spdlog/details/synchronous_factory.h
- ../include/spdlog/details/windows_include.h
  ../include/spdlog/fmt/bundled/core.h
  ../include/spdlog/fmt/bundled/format-inl.h
  ../include/spdlog/fmt/bundled/format.h
@@ -88,23 +80,13 @@ CMakeFiles/Vessel.dir/src/Core/Log.cpp.o
  ../include/spdlog/fmt/fmt.h
  ../include/spdlog/fmt/ostr.h
  ../include/spdlog/formatter.h
- ../include/spdlog/logger-inl.h
  ../include/spdlog/logger.h
- ../include/spdlog/pattern_formatter-inl.h
- ../include/spdlog/pattern_formatter.h
- ../include/spdlog/sinks/ansicolor_sink-inl.h
  ../include/spdlog/sinks/ansicolor_sink.h
- ../include/spdlog/sinks/base_sink-inl.h
  ../include/spdlog/sinks/base_sink.h
- ../include/spdlog/sinks/basic_file_sink-inl.h
  ../include/spdlog/sinks/basic_file_sink.h
- ../include/spdlog/sinks/sink-inl.h
  ../include/spdlog/sinks/sink.h
- ../include/spdlog/sinks/stdout_color_sinks-inl.h
  ../include/spdlog/sinks/stdout_color_sinks.h
- ../include/spdlog/sinks/wincolor_sink-inl.h
  ../include/spdlog/sinks/wincolor_sink.h
- ../include/spdlog/spdlog-inl.h
  ../include/spdlog/spdlog.h
  ../include/spdlog/tweakme.h
  ../include/spdlog/version.h
@@ -115,26 +97,17 @@ CMakeFiles/Vessel.dir/src/Core/Log.cpp.o
  /workspace/Vessel/src/Core/Log.h
  /workspace/Vessel/src/pch.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o
- ../include/spdlog/common-inl.h
+ ../include/KHR/khrplatform.h
+ ../include/glad/glad.h
  ../include/spdlog/common.h
- ../include/spdlog/details/backtracer-inl.h
- ../include/spdlog/details/backtracer.h
- ../include/spdlog/details/circular_q.h
- ../include/spdlog/details/console_globals.h
  ../include/spdlog/details/fmt_helper.h
- ../include/spdlog/details/log_msg-inl.h
  ../include/spdlog/details/log_msg.h
- ../include/spdlog/details/log_msg_buffer-inl.h
- ../include/spdlog/details/log_msg_buffer.h
+ ../include/spdlog/details/logger_impl.h
  ../include/spdlog/details/null_mutex.h
- ../include/spdlog/details/os-inl.h
  ../include/spdlog/details/os.h
- ../include/spdlog/details/periodic_worker-inl.h
+ ../include/spdlog/details/pattern_formatter.h
  ../include/spdlog/details/periodic_worker.h
- ../include/spdlog/details/registry-inl.h
  ../include/spdlog/details/registry.h
- ../include/spdlog/details/synchronous_factory.h
- ../include/spdlog/details/windows_include.h
  ../include/spdlog/fmt/bundled/core.h
  ../include/spdlog/fmt/bundled/format-inl.h
  ../include/spdlog/fmt/bundled/format.h
@@ -142,24 +115,18 @@ CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o
  ../include/spdlog/fmt/fmt.h
  ../include/spdlog/fmt/ostr.h
  ../include/spdlog/formatter.h
- ../include/spdlog/logger-inl.h
  ../include/spdlog/logger.h
- ../include/spdlog/pattern_formatter-inl.h
- ../include/spdlog/pattern_formatter.h
- ../include/spdlog/sinks/ansicolor_sink-inl.h
- ../include/spdlog/sinks/ansicolor_sink.h
- ../include/spdlog/sinks/sink-inl.h
  ../include/spdlog/sinks/sink.h
- ../include/spdlog/sinks/wincolor_sink-inl.h
- ../include/spdlog/sinks/wincolor_sink.h
- ../include/spdlog/spdlog-inl.h
  ../include/spdlog/spdlog.h
  ../include/spdlog/tweakme.h
  ../include/spdlog/version.h
  ../src/Core/Base.h
  ../src/Core/Log.h
  ../src/Core/Window.h
+ ../src/Events/ApplicationEvent.h
  ../src/Events/Event.h
+ ../src/Events/KeyEvent.h
+ ../src/Events/MouseEvent.h
  ../src/pch.h
  /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
  /workspace/Vessel/src/Platform/WindowsWindow.cpp

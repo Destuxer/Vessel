@@ -27,12 +27,18 @@ file(GLOB SOURCES
     "${SOURCE_DIR}/*.cpp"
 )
 
-add_library(${PROJECT_NAME} src/Core/Application.cpp src/Platform/WindowsWindow.cpp src/Core/Log.cpp)
+add_library(${PROJECT_NAME} SHARED src/Core/Application.cpp src/Platform/WindowsWindow.cpp src/Core/Log.cpp src/Core/Layer.cpp src/Core/LayerStack.cpp)
 
-target_link_libraries(${PROJECT_NAME} ${GLFW3_LIBRARY} ${OPENGL_LIBRARIES})
+add_library(Glad SHARED glad/glad.c)
+
+add_library(imgui STATIC imgui/imgui.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp)
+
+target_link_libraries(${PROJECT_NAME} ${GLFW3_LIBRARY} ${OPENGL_LIBRARIES} Glad imgui)
 include_directories(${PROJECT_NAME} PRIVATE src/ PRIVATE include/)
 target_precompile_headers(${PROJECT_NAME} PUBLIC src/pch.h)
 
 add_executable(AppTest AppTest.cpp)
 
 target_link_libraries(AppTest ${PROJECT_NAME})
+
+add_definitions(-DGLFW_INCLUDE_NONE)

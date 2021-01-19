@@ -6,7 +6,7 @@ namespace Vessel {
     class MouseMovedEvent : public Event
 	{
 	public:
-		MouseMovedEvent(const float x, const float y)
+		MouseMovedEvent(float x,float y)
 			: m_MouseX(x), m_MouseY(y) {}
 
 		float GetX() const { return m_MouseX; }
@@ -50,20 +50,20 @@ namespace Vessel {
 	class MouseButtonEvent : public Event
 	{
 	public:
-		MouseCode GetMouseButton() const { return m_Button; }
+		inline int GetMouseButton() const { return m_Button; }
 
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput | EventCategoryMouseButton)
 	protected:
-		MouseButtonEvent(const MouseCode button)
+		MouseButtonEvent(int button)
 			: m_Button(button) {}
 
-		MouseCode m_Button;
+		int m_Button;
 	};
 
 	class MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtonPressedEvent(const MouseCode button)
+		MouseButtonPressedEvent(int button)
 			: MouseButtonEvent(button) {}
 
 		std::string ToString() const override
@@ -79,7 +79,7 @@ namespace Vessel {
 	class MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtonReleasedEvent(const MouseCode button)
+		MouseButtonReleasedEvent(int button)
 			: MouseButtonEvent(button) {}
 
 		std::string ToString() const override

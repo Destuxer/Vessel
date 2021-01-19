@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Base.h"
-#include "spdlog/logger.h"
 #include <memory>
 
 #pragma warning(push, 0)

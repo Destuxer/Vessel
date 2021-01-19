@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Vessel.dir/cmake_pch.hxx.gch"
   "CMakeFiles/Vessel.dir/src/Core/Application.cpp.o"
+  "CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o"
+  "CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o"
   "CMakeFiles/Vessel.dir/src/Core/Log.cpp.o"
   "CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o"
-  "libVessel.a"
   "libVessel.pdb"
+  "libVessel.so"
 )
 
 # Per-language clean rules from dependency scanning.

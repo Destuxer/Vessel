@@ -58,6 +58,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/AppTest.dir/DependInfo.cmake"
+  "CMakeFiles/imgui.dir/DependInfo.cmake"
+  "CMakeFiles/Glad.dir/DependInfo.cmake"
   "CMakeFiles/NightlyMemCheck.dir/DependInfo.cmake"
   "CMakeFiles/NightlyTest.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousConfigure.dir/DependInfo.cmake"
