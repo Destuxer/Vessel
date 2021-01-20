@@ -651,6 +651,18 @@ Events/Event.h
 /workspace/Vessel/src/ImGui/ImGuiLayer.cpp
 Core/Application.h
 /workspace/Vessel/src/ImGui/Core/Application.h
+Core/Base.h
+/workspace/Vessel/src/ImGui/Core/Base.h
+Events/ApplicationEvent.h
+/workspace/Vessel/src/ImGui/Events/ApplicationEvent.h
+Events/Event.h
+/workspace/Vessel/src/ImGui/Events/Event.h
+Events/KeyEvent.h
+/workspace/Vessel/src/ImGui/Events/KeyEvent.h
+Events/MouseEvent.h
+/workspace/Vessel/src/ImGui/Events/MouseEvent.h
+glad/glad.h
+/workspace/Vessel/src/ImGui/glad/glad.h
 pch.h
 /workspace/Vessel/src/ImGui/pch.h
 imgui.h
@@ -665,6 +677,14 @@ GLFW/glfw3.h
 /workspace/Vessel/src/ImGui/ImGuiLayer.h
 Core/Layer.h
 /workspace/Vessel/src/ImGui/Core/Layer.h
+Events/MouseEvent.h
+/workspace/Vessel/src/ImGui/Events/MouseEvent.h
+Events/KeyEvent.h
+/workspace/Vessel/src/ImGui/Events/KeyEvent.h
+Events/ApplicationEvent.h
+/workspace/Vessel/src/ImGui/Events/ApplicationEvent.h
+Events/Event.h
+/workspace/Vessel/src/ImGui/Events/Event.h
 
 /workspace/Vessel/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp
 pch.h

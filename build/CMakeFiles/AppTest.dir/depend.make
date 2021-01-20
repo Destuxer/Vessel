@@ -31,6 +31,8 @@ CMakeFiles/AppTest.dir/AppTest.cpp.o: ../src/Core/Log.h
 CMakeFiles/AppTest.dir/AppTest.cpp.o: ../src/Core/Window.h
 CMakeFiles/AppTest.dir/AppTest.cpp.o: ../src/Events/ApplicationEvent.h
 CMakeFiles/AppTest.dir/AppTest.cpp.o: ../src/Events/Event.h
+CMakeFiles/AppTest.dir/AppTest.cpp.o: ../src/Events/KeyEvent.h
+CMakeFiles/AppTest.dir/AppTest.cpp.o: ../src/Events/MouseEvent.h
 CMakeFiles/AppTest.dir/AppTest.cpp.o: ../src/ImGui/ImGuiLayer.h
 CMakeFiles/AppTest.dir/AppTest.cpp.o: ../src/Vessel.h
 CMakeFiles/AppTest.dir/AppTest.cpp.o: ../src/pch.h

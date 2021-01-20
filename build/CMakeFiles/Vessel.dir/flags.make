@@ -6,7 +6,7 @@ CXX_DEFINES = -DGLFW_INCLUDE_NONE -DVessel_EXPORTS
 
 CXX_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui
 
-CXX_FLAGS = -O2 -g -DNDEBUG -fPIC -std=gnu++17
+CXX_FLAGS = -g -fPIC -std=gnu++17
 
 # PCH options: CMakeFiles/Vessel.dir/cmake_pch.hxx.gch_OPTIONS = -Winvalid-pch;-x;c++-header;-include;/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
 

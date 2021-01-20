@@ -6,5 +6,5 @@ CXX_DEFINES = -DGLFW_INCLUDE_NONE -Dimgui_EXPORTS
 
 CXX_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui
 
-CXX_FLAGS = -O2 -g -DNDEBUG -fPIC -std=gnu++17
+CXX_FLAGS = -g -fPIC -std=gnu++17
 

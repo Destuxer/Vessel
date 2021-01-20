@@ -388,9 +388,25 @@ pch.h
 Core/Base.h
 ../src/Events/Core/Base.h
 
+../src/Events/KeyEvent.h
+Event.h
+../src/Events/Event.h
+
+../src/Events/MouseEvent.h
+Event.h
+../src/Events/Event.h
+
 ../src/ImGui/ImGuiLayer.h
 Core/Layer.h
 ../src/ImGui/Core/Layer.h
+Events/MouseEvent.h
+../src/ImGui/Events/MouseEvent.h
+Events/KeyEvent.h
+../src/ImGui/Events/KeyEvent.h
+Events/ApplicationEvent.h
+../src/ImGui/Events/ApplicationEvent.h
+Events/Event.h
+../src/ImGui/Events/Event.h
 
 ../src/Vessel.h
 Core/Application.h

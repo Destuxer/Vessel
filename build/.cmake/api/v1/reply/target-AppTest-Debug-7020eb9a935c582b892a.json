@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libVessel.so"
+			"path" : "AppTest"
 		}
 	],
 	"backtrace" : 1,
@@ -10,11 +10,10 @@
 	{
 		"commands" : 
 		[
-			"add_library",
+			"add_executable",
 			"target_link_libraries",
 			"add_definitions",
-			"include_directories",
-			"target_precompile_headers"
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -28,13 +27,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 31,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 37,
+				"line" : 43,
 				"parent" : 0
 			},
 			{
@@ -54,12 +53,6 @@
 				"file" : 0,
 				"line" : 38,
 				"parent" : 0
-			},
-			{
-				"command" : 4,
-				"file" : 0,
-				"line" : 39,
-				"parent" : 0
 			}
 		]
 	},
@@ -69,13 +62,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-O2 -g -DNDEBUG -fPIC"
+					"fragment" : "-g"
 				},
 				{
 					"fragment" : "-std=gnu++17"
 				},
 				{
-					"fragment" : "-Winvalid-pch -x c++-header -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx"
+					"fragment" : "-Winvalid-pch -x c++-header -include /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx"
 				}
 			],
 			"defines" : 
@@ -83,9 +76,6 @@
 				{
 					"backtrace" : 3,
 					"define" : "GLFW_INCLUDE_NONE"
-				},
-				{
-					"define" : "Vessel_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -123,7 +113,7 @@
 			"precompileHeaders" : 
 			[
 				{
-					"backtrace" : 6,
+					"backtrace" : 2,
 					"header" : "/workspace/Vessel/src/pch.h"
 				}
 			],
@@ -136,13 +126,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-O2 -g -DNDEBUG -fPIC"
+					"fragment" : "-g"
 				},
 				{
 					"fragment" : "-std=gnu++17"
 				},
 				{
-					"fragment" : "-Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx"
+					"fragment" : "-Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx"
 				}
 			],
 			"defines" : 
@@ -150,9 +140,6 @@
 				{
 					"backtrace" : 3,
 					"define" : "GLFW_INCLUDE_NONE"
-				},
-				{
-					"define" : "Vessel_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -190,19 +177,13 @@
 			"precompileHeaders" : 
 			[
 				{
-					"backtrace" : 6,
+					"backtrace" : 2,
 					"header" : "/workspace/Vessel/src/pch.h"
 				}
 			],
 			"sourceIndexes" : 
 			[
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7
+				1
 			]
 		}
 	],
@@ -215,13 +196,21 @@
 		{
 			"backtrace" : 2,
 			"id" : "Glad::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Vessel::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "Vessel::@6890427a1f51a3e7e1df",
+	"id" : "AppTest::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -232,34 +221,34 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "libVessel.so",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libglfw.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libOpenGL.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libGLX.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
 				"fragment" : "libGlad.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 2,
 				"fragment" : "libimgui.so",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "Vessel",
-	"nameOnDisk" : "libVessel.so",
+	"name" : "AppTest",
+	"nameOnDisk" : "AppTest",
 	"paths" : 
 	{
 		"build" : ".",
@@ -272,20 +261,14 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7
+				1
 			]
 		},
 		{
 			"name" : "Precompile Header File",
 			"sourceIndexes" : 
 			[
-				8
+				2
 			]
 		}
 	],
@@ -294,56 +277,20 @@
 		{
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
-			"path" : "build/CMakeFiles/Vessel.dir/cmake_pch.hxx.cxx",
+			"path" : "build/CMakeFiles/AppTest.dir/cmake_pch.hxx.cxx",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
-			"path" : "src/Core/Application.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "src/Platform/WindowsWindow.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "src/Core/Log.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "src/Core/Layer.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "src/Core/LayerStack.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 1,
-			"path" : "src/ImGui/ImGuiLayer.cpp",
+			"path" : "AppTest.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
-			"path" : "build/CMakeFiles/Vessel.dir/cmake_pch.hxx",
+			"path" : "build/CMakeFiles/AppTest.dir/cmake_pch.hxx",
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "EXECUTABLE"
 }
