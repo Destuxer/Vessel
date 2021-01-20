@@ -96,6 +96,32 @@ CMakeFiles/Vessel.dir/src/Core/Log.cpp.o: ../src/Core/Log.cpp
 CMakeFiles/Vessel.dir/src/Core/Log.cpp.o: ../src/Core/Log.h
 CMakeFiles/Vessel.dir/src/Core/Log.cpp.o: ../src/pch.h
 
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../imgui/imconfig.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../imgui/imgui.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/Core/Application.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/Core/Base.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/Core/Layer.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/Core/LayerStack.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/Core/Window.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/Events/ApplicationEvent.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/Events/Event.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/Platform/OpenGL/ImGuiOpenGLRenderer.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/pch.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: CMakeFiles/Vessel.dir/cmake_pch.hxx
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/ImGui/ImGuiLayer.cpp
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/ImGui/ImGuiLayer.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o: ../src/pch.h
+
+CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../imgui/imconfig.h
+CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../imgui/imgui.h
+CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../include/KHR/khrplatform.h
+CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../include/glad/glad.h
+CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../src/pch.h
+CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: CMakeFiles/Vessel.dir/cmake_pch.hxx
+CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp
+CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../src/Platform/OpenGL/ImGuiOpenGLRenderer.h
+CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../src/pch.h
+
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/KHR/khrplatform.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/glad/glad.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/spdlog/common.h

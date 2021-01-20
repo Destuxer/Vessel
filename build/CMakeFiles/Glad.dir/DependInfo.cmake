@@ -20,6 +20,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../PRIVATE"
   "../src"
   "../include"
+  "../imgui"
   )
 
 # Targets to which this target links.

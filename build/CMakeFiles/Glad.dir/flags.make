@@ -4,7 +4,7 @@
 # compile C with /bin/gcc-9
 C_DEFINES = -DGLFW_INCLUDE_NONE -DGlad_EXPORTS
 
-C_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include
+C_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui
 
 C_FLAGS = -O2 -g -DNDEBUG -fPIC
 

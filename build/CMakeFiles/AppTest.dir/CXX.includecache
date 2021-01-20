@@ -388,11 +388,19 @@ pch.h
 Core/Base.h
 ../src/Events/Core/Base.h
 
+../src/ImGui/ImGuiLayer.h
+Core/Layer.h
+../src/ImGui/Core/Layer.h
+
 ../src/Vessel.h
 Core/Application.h
 ../src/Core/Application.h
+Core/Log.h
+../src/Core/Log.h
 Core/Layer.h
 ../src/Core/Layer.h
+ImGui/ImGuiLayer.h
+../src/ImGui/ImGuiLayer.h
 Core/Entrypoint.h
 ../src/Core/Entrypoint.h
 
@@ -421,8 +429,6 @@ windows.h
 -
 
 /workspace/Vessel/AppTest.cpp
-Core/Application.h
-/workspace/Vessel/Core/Application.h
 Vessel.h
 -
 

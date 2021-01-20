@@ -14,6 +14,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "GLFW_INCLUDE_NONE"
+  "imgui_EXPORTS"
   )
 
 # The include file search paths:
@@ -22,6 +23,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../PRIVATE"
   "../src"
   "../include"
+  "../imgui"
   )
 
 # Targets to which this target links.

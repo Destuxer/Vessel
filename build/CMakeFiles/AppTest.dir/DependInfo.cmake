@@ -22,6 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../PRIVATE"
   "../src"
   "../include"
+  "../imgui"
   )
 
 # Targets to which this target links.

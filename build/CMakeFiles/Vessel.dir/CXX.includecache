@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+../imgui/imconfig.h
+
+../imgui/imgui.h
+imconfig.h
+../imgui/imconfig.h
+float.h
+-
+stdarg.h
+-
+stddef.h
+-
+string.h
+-
+assert.h
+-
+stdint.h
+-
+imgui_user.h
+../imgui/imgui_user.h
+
 ../include/KHR/khrplatform.h
 stdint.h
 -
@@ -432,10 +452,36 @@ string
 
 ../include/spdlog/version.h
 
+../src/Core/Application.h
+Events/Event.h
+../src/Core/Events/Event.h
+Events/ApplicationEvent.h
+../src/Core/Events/ApplicationEvent.h
+Base.h
+../src/Core/Base.h
+Window.h
+../src/Core/Window.h
+LayerStack.h
+../src/Core/LayerStack.h
+
 ../src/Core/Base.h
 memory
 -
 signal.h
+-
+
+../src/Core/Layer.h
+Base.h
+../src/Core/Base.h
+Events/Event.h
+../src/Core/Events/Event.h
+
+../src/Core/LayerStack.h
+Base.h
+../src/Core/Base.h
+Layer.h
+../src/Core/Layer.h
+vector
 -
 
 ../src/Core/Log.h
@@ -474,6 +520,12 @@ Event.h
 Event.h
 ../src/Events/Event.h
 
+../src/Platform/OpenGL/ImGuiOpenGLRenderer.h
+imgui.h
+../src/Platform/OpenGL/imgui.h
+TargetConditionals.h
+../src/Platform/OpenGL/TargetConditionals.h
+
 ../src/pch.h
 iostream
 -
@@ -505,6 +557,8 @@ windows.h
 /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx.cxx
 
 /workspace/Vessel/src/Core/Application.cpp
+Core/Base.h
+/workspace/Vessel/src/Core/Core/Base.h
 glad/glad.h
 /workspace/Vessel/src/Core/glad/glad.h
 pch.h
@@ -593,6 +647,46 @@ Core/Base.h
 /workspace/Vessel/src/Core/Core/Base.h
 Events/Event.h
 /workspace/Vessel/src/Core/Events/Event.h
+
+/workspace/Vessel/src/ImGui/ImGuiLayer.cpp
+Core/Application.h
+/workspace/Vessel/src/ImGui/Core/Application.h
+pch.h
+/workspace/Vessel/src/ImGui/pch.h
+imgui.h
+/workspace/Vessel/src/ImGui/imgui.h
+Platform/OpenGL/ImGuiOpenGLRenderer.h
+/workspace/Vessel/src/ImGui/Platform/OpenGL/ImGuiOpenGLRenderer.h
+ImGuiLayer.h
+/workspace/Vessel/src/ImGui/ImGuiLayer.h
+GLFW/glfw3.h
+/workspace/Vessel/src/ImGui/GLFW/glfw3.h
+
+/workspace/Vessel/src/ImGui/ImGuiLayer.h
+Core/Layer.h
+/workspace/Vessel/src/ImGui/Core/Layer.h
+
+/workspace/Vessel/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp
+pch.h
+/workspace/Vessel/src/Platform/OpenGL/pch.h
+imgui.h
+/workspace/Vessel/src/Platform/OpenGL/imgui.h
+ImGuiOpenGLRenderer.h
+/workspace/Vessel/src/Platform/OpenGL/ImGuiOpenGLRenderer.h
+glad/glad.h
+/workspace/Vessel/src/Platform/OpenGL/glad/glad.h
+stdio.h
+-
+stddef.h
+-
+stdint.h
+-
+
+/workspace/Vessel/src/Platform/OpenGL/ImGuiOpenGLRenderer.h
+imgui.h
+/workspace/Vessel/src/Platform/OpenGL/imgui.h
+TargetConditionals.h
+/workspace/Vessel/src/Platform/OpenGL/TargetConditionals.h
 
 /workspace/Vessel/src/Platform/WindowsWindow.cpp
 Core/Base.h

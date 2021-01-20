@@ -22,19 +22,20 @@ include_directories(${PROJECT_NAME} PRIVATE ${OPENGL_INCLUDE_DIR})
 find_package(GLFW3 REQUIRED)
 include_directories(${PROJECT_NAME} PRIVATE ${GLFW3_INCLUDE_DIR})
 
+
 file(GLOB SOURCES
     "${SOURCE_DIR}/*.h"
     "${SOURCE_DIR}/*.cpp"
 )
 
-add_library(${PROJECT_NAME} SHARED src/Core/Application.cpp src/Platform/WindowsWindow.cpp src/Core/Log.cpp src/Core/Layer.cpp src/Core/LayerStack.cpp)
+add_library(${PROJECT_NAME} SHARED src/Core/Application.cpp src/Platform/WindowsWindow.cpp src/Core/Log.cpp src/Core/Layer.cpp src/Core/LayerStack.cpp src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp src/ImGui/ImGuiLayer.cpp)
 
 add_library(Glad SHARED glad/glad.c)
 
-add_library(imgui STATIC imgui/imgui.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp)
+add_library(imgui SHARED imgui/imgui.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp)
 
 target_link_libraries(${PROJECT_NAME} ${GLFW3_LIBRARY} ${OPENGL_LIBRARIES} Glad imgui)
-include_directories(${PROJECT_NAME} PRIVATE src/ PRIVATE include/)
+include_directories(${PROJECT_NAME} PRIVATE src/ PRIVATE include/ PRIVATE imgui/)
 target_precompile_headers(${PROJECT_NAME} PUBLIC src/pch.h)
 
 add_executable(AppTest AppTest.cpp)
