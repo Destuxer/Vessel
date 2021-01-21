@@ -1,16 +1,11 @@
 #include "Core/Application.h"
 #include "Core/Base.h"
-#include "Events/ApplicationEvent.h"
-#include "Events/Event.h"
-#include "Events/KeyEvent.h"
-#include "Events/MouseEvent.h"
-#include "glad/glad.h"
 #include "pch.h"
-
 #include "imgui.h"
 #include "Platform/OpenGL/ImGuiOpenGLRenderer.h"
 #include "ImGuiLayer.h"
-#include "GLFW/glfw3.h"
+#include <GLFW/glfw3.h>
+#include <glad/glad.h>
 
 namespace Vessel {
     ImGuiLayer::ImGuiLayer()
@@ -86,7 +81,7 @@ namespace Vessel {
         dispatcher.Dispatch<MouseButtonReleasedEvent>(VSL_BIND_EVENT_FN(ImGuiLayer::OnMouseButtonReleasedEvent));
         dispatcher.Dispatch<MouseMovedEvent>(VSL_BIND_EVENT_FN(ImGuiLayer::OnMouseMovedEvent));
         dispatcher.Dispatch<MouseScrolledEvent>(VSL_BIND_EVENT_FN(ImGuiLayer::OnMouseScrolledEvent));
-        //dispatcher.Dispatch<KeyTypedEvent>(VSL_BIND_EVENT_FN(ImGuiLayer::OnKeyTypedEvent));
+        dispatcher.Dispatch<KeyTypedEvent>(VSL_BIND_EVENT_FN(ImGuiLayer::OnKeyTypedEvent));
         dispatcher.Dispatch<KeyPressedEvent>(VSL_BIND_EVENT_FN(ImGuiLayer::OnKeyPressedEvent));
         dispatcher.Dispatch<KeyReleasedEvent>(VSL_BIND_EVENT_FN(ImGuiLayer::OnKeyReleasedEvent));
         dispatcher.Dispatch<WindowResizeEvent>(VSL_BIND_EVENT_FN(ImGuiLayer::OnWindowResizeEvent));
@@ -140,14 +135,14 @@ namespace Vessel {
 		return false;
     }
 
-    // bool ImGuiLayer::OnKeyTypedEvent(KeyTypedEvent& e){
-        // ImGuiIO& io = ImGui::GetIO();
-		// int keycode = e.GetKeyCode();
-		// if (keycode > 0 && keycode < 0x10000)
-		// io.AddInputCharacter((unsigned short)keycode);
+    bool ImGuiLayer::OnKeyTypedEvent(KeyTypedEvent& e){
+        ImGuiIO& io = ImGui::GetIO();
+		int keycode = e.GetKeyCode();
+		if (keycode > 0 && keycode < 0x10000)
+		    io.AddInputCharacter((unsigned short)keycode);
 
-		// return false;
-    // }
+		return false;
+    }
 
     bool ImGuiLayer::OnWindowResizeEvent(WindowResizeEvent& e){
         ImGuiIO& io = ImGui::GetIO();

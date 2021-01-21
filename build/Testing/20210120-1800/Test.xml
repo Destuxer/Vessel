@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++-9"
+	BuildStamp="20210120-1800-Experimental"
+	Name="ws-af4e0a8c-5a0a-4a91-bcab-1344b0e24f5e"
+	Generator="ctest-3.19.2"
+	CompilerName="/bin/g++-9"
+	CompilerVersion="9.3.0"
+	OSName="Linux"
+	Hostname="ws-f98ba531-eb4c-4a0a-baf4-e9458cbaa05d"
+	OSRelease="5.4.0-1024-gcp"
+	OSVersion="#24~18.04.1-Ubuntu SMP Sun Sep 6 03:37:03 UTC 2020"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="85"
+	ProcessorCacheSize="33792"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="64322"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2800.17"
+	>
+	<Testing>
+		<StartDateTime>Jan 20 18:01 UTC</StartDateTime>
+		<StartTestTime>1611165668</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 20 18:01 UTC</EndDateTime>
+		<EndTestTime>1611165668</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

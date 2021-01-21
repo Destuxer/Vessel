@@ -37,6 +37,7 @@ CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
  /workspace/Vessel/src/Core/Application.cpp
  /workspace/Vessel/src/Core/Application.h
  /workspace/Vessel/src/Core/Base.h
+ /workspace/Vessel/src/Core/Input.h
  /workspace/Vessel/src/Core/Layer.h
  /workspace/Vessel/src/Core/LayerStack.h
  /workspace/Vessel/src/Core/Log.h
@@ -125,6 +126,20 @@ CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o
  /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
  /workspace/Vessel/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp
  /workspace/Vessel/src/Platform/OpenGL/ImGuiOpenGLRenderer.h
+ /workspace/Vessel/src/pch.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o
+ ../src/Core/Application.h
+ ../src/Core/Base.h
+ ../src/Core/Input.h
+ ../src/Core/Layer.h
+ ../src/Core/LayerStack.h
+ ../src/Core/Window.h
+ ../src/Events/ApplicationEvent.h
+ ../src/Events/Event.h
+ ../src/pch.h
+ /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
+ /workspace/Vessel/src/Platform/PlatformInput.cpp
+ /workspace/Vessel/src/Platform/PlatformInput.h
  /workspace/Vessel/src/pch.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o
  ../include/KHR/khrplatform.h

@@ -1,14 +1,11 @@
-#include "Core/Base.h"
 #include "glad/glad.h"
 #include "pch.h"
 #include "Application.h"
-
-#include "Events/ApplicationEvent.h"
 #include "Log.h"
-
-#include "GLFW/glfw3.h"
+#include "Input.h"
+#include <GLFW/glfw3.h>
 #include <GL/gl.h>
-
+#include <X11/keysym.h>
 namespace Vessel {
 
 #define BIND_EVENT_FN(x)    std::bind(&Application::x,this,std::placeholders::_1)
@@ -55,6 +52,9 @@ namespace Vessel {
             
             for(Layer* layer : m_LayerStack)
                 layer->OnUpdate();
+            
+            auto[x,y] = Input::GetMousePosition();
+            VSL_CORE_TRACE("{0}, {1}",x,y);
             
             m_Window->OnUpdate();
 

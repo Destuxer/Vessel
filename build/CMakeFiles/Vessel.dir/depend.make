@@ -36,6 +36,7 @@ CMakeFiles/Vessel.dir/src/Core/Application.cpp.o: CMakeFiles/Vessel.dir/cmake_pc
 CMakeFiles/Vessel.dir/src/Core/Application.cpp.o: ../src/Core/Application.cpp
 CMakeFiles/Vessel.dir/src/Core/Application.cpp.o: ../src/Core/Application.h
 CMakeFiles/Vessel.dir/src/Core/Application.cpp.o: ../src/Core/Base.h
+CMakeFiles/Vessel.dir/src/Core/Application.cpp.o: ../src/Core/Input.h
 CMakeFiles/Vessel.dir/src/Core/Application.cpp.o: ../src/Core/Layer.h
 CMakeFiles/Vessel.dir/src/Core/Application.cpp.o: ../src/Core/LayerStack.h
 CMakeFiles/Vessel.dir/src/Core/Application.cpp.o: ../src/Core/Log.h
@@ -125,6 +126,20 @@ CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: CMakeFiles/
 CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp
 CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../src/Platform/OpenGL/ImGuiOpenGLRenderer.h
 CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o: ../src/pch.h
+
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Core/Application.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Core/Base.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Core/Input.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Core/Layer.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Core/LayerStack.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Core/Window.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Events/ApplicationEvent.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Events/Event.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/pch.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: CMakeFiles/Vessel.dir/cmake_pch.hxx
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Platform/PlatformInput.cpp
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/Platform/PlatformInput.h
+CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/pch.h
 
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/KHR/khrplatform.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/glad/glad.h

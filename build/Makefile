@@ -176,30 +176,17 @@ AppTest/fast:
 .PHONY : AppTest/fast
 
 #=============================================================================
-# Target rules for targets named imgui
+# Target rules for targets named Vessel
 
 # Build rule for target.
-imgui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
-.PHONY : imgui
+Vessel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Vessel
+.PHONY : Vessel
 
 # fast build rule for target.
-imgui/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/build
-.PHONY : imgui/fast
-
-#=============================================================================
-# Target rules for targets named Glad
-
-# Build rule for target.
-Glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Glad
-.PHONY : Glad
-
-# fast build rule for target.
-Glad/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/build
-.PHONY : Glad/fast
+Vessel/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/build
+.PHONY : Vessel/fast
 
 #=============================================================================
 # Target rules for targets named NightlyMemCheck
@@ -475,6 +462,32 @@ ExperimentalStart/fast:
 .PHONY : ExperimentalStart/fast
 
 #=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
+#=============================================================================
+# Target rules for targets named Glad
+
+# Build rule for target.
+Glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Glad
+.PHONY : Glad
+
+# fast build rule for target.
+Glad/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/build
+.PHONY : Glad/fast
+
+#=============================================================================
 # Target rules for targets named NightlyBuild
 
 # Build rule for target.
@@ -565,45 +578,32 @@ ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-#=============================================================================
-# Target rules for targets named Vessel
+Sandbox/AppTest.o: Sandbox/AppTest.cpp.o
 
-# Build rule for target.
-Vessel: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Vessel
-.PHONY : Vessel
-
-# fast build rule for target.
-Vessel/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/build
-.PHONY : Vessel/fast
-
-AppTest.o: AppTest.cpp.o
-
-.PHONY : AppTest.o
+.PHONY : Sandbox/AppTest.o
 
 # target to build an object file
-AppTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/AppTest.cpp.o
-.PHONY : AppTest.cpp.o
+Sandbox/AppTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.o
+.PHONY : Sandbox/AppTest.cpp.o
 
-AppTest.i: AppTest.cpp.i
+Sandbox/AppTest.i: Sandbox/AppTest.cpp.i
 
-.PHONY : AppTest.i
+.PHONY : Sandbox/AppTest.i
 
 # target to preprocess a source file
-AppTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/AppTest.cpp.i
-.PHONY : AppTest.cpp.i
+Sandbox/AppTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.i
+.PHONY : Sandbox/AppTest.cpp.i
 
-AppTest.s: AppTest.cpp.s
+Sandbox/AppTest.s: Sandbox/AppTest.cpp.s
 
-.PHONY : AppTest.s
+.PHONY : Sandbox/AppTest.s
 
 # target to generate assembly for a file
-AppTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/AppTest.cpp.s
-.PHONY : AppTest.cpp.s
+Sandbox/AppTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.s
+.PHONY : Sandbox/AppTest.cpp.s
 
 # target to build an object file
 cmake_pch.hxx.gch:
@@ -920,6 +920,33 @@ src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s
 .PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s
 
+src/Platform/PlatformInput.o: src/Platform/PlatformInput.cpp.o
+
+.PHONY : src/Platform/PlatformInput.o
+
+# target to build an object file
+src/Platform/PlatformInput.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o
+.PHONY : src/Platform/PlatformInput.cpp.o
+
+src/Platform/PlatformInput.i: src/Platform/PlatformInput.cpp.i
+
+.PHONY : src/Platform/PlatformInput.i
+
+# target to preprocess a source file
+src/Platform/PlatformInput.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.i
+.PHONY : src/Platform/PlatformInput.cpp.i
+
+src/Platform/PlatformInput.s: src/Platform/PlatformInput.cpp.s
+
+.PHONY : src/Platform/PlatformInput.s
+
+# target to generate assembly for a file
+src/Platform/PlatformInput.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.s
+.PHONY : src/Platform/PlatformInput.cpp.s
+
 src/Platform/WindowsWindow.o: src/Platform/WindowsWindow.cpp.o
 
 .PHONY : src/Platform/WindowsWindow.o
@@ -990,9 +1017,9 @@ help:
 	@echo "... Glad"
 	@echo "... Vessel"
 	@echo "... imgui"
-	@echo "... AppTest.o"
-	@echo "... AppTest.i"
-	@echo "... AppTest.s"
+	@echo "... Sandbox/AppTest.o"
+	@echo "... Sandbox/AppTest.i"
+	@echo "... Sandbox/AppTest.s"
 	@echo "... cmake_pch.hxx.gch"
 	@echo "... cmake_pch.hxx.i"
 	@echo "... cmake_pch.hxx.s"
@@ -1029,6 +1056,9 @@ help:
 	@echo "... src/Platform/OpenGL/ImGuiOpenGLRenderer.o"
 	@echo "... src/Platform/OpenGL/ImGuiOpenGLRenderer.i"
 	@echo "... src/Platform/OpenGL/ImGuiOpenGLRenderer.s"
+	@echo "... src/Platform/PlatformInput.o"
+	@echo "... src/Platform/PlatformInput.i"
+	@echo "... src/Platform/PlatformInput.s"
 	@echo "... src/Platform/WindowsWindow.o"
 	@echo "... src/Platform/WindowsWindow.i"
 	@echo "... src/Platform/WindowsWindow.s"

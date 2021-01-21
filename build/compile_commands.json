@@ -66,12 +66,17 @@
 },
 {
   "directory": "/workspace/Vessel/build",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -g -fPIC -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o -c /workspace/Vessel/src/Platform/PlatformInput.cpp",
+  "file": "/workspace/Vessel/src/Platform/PlatformInput.cpp"
+},
+{
+  "directory": "/workspace/Vessel/build",
   "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -g -std=gnu++17 -Winvalid-pch -x c++-header -include /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx -o CMakeFiles/AppTest.dir/cmake_pch.hxx.gch -c /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx.cxx",
   "file": "/workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx.cxx"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -g -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx -o CMakeFiles/AppTest.dir/AppTest.cpp.o -c /workspace/Vessel/AppTest.cpp",
-  "file": "/workspace/Vessel/AppTest.cpp"
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -g -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx -o CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.o -c /workspace/Vessel/Sandbox/AppTest.cpp",
+  "file": "/workspace/Vessel/Sandbox/AppTest.cpp"
 }
 ]

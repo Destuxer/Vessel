@@ -405,8 +405,6 @@ Events/KeyEvent.h
 ../src/ImGui/Events/KeyEvent.h
 Events/ApplicationEvent.h
 ../src/ImGui/Events/ApplicationEvent.h
-Events/Event.h
-../src/ImGui/Events/Event.h
 
 ../src/Vessel.h
 Core/Application.h
@@ -444,15 +442,13 @@ unordered_set
 windows.h
 -
 
-/workspace/Vessel/AppTest.cpp
+/workspace/Vessel/Sandbox/AppTest.cpp
 Vessel.h
 -
 
 /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx
 /workspace/Vessel/src/pch.h
 -
-
-/workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx.cxx
 
 /workspace/Vessel/src/pch.h
 iostream

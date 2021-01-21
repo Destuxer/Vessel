@@ -24,3 +24,5 @@ CXX_FLAGS = -g -fPIC -std=gnu++17
 
 # PCH options: CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o_OPTIONS = -Winvalid-pch;-include;/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
 
+# PCH options: CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o_OPTIONS = -Winvalid-pch;-include;/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
+
