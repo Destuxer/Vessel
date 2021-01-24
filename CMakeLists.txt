@@ -32,10 +32,10 @@ add_library(Glad SHARED glad/glad.c)
 
 add_library(imgui SHARED imgui/imgui.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp)
 
-add_library(${PROJECT_NAME} SHARED src/Core/Application.cpp src/Platform/WindowsWindow.cpp src/Core/Log.cpp src/Core/Layer.cpp src/Core/LayerStack.cpp src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp src/ImGui/ImGuiLayer.cpp src/Platform/PlatformInput.cpp)
+add_library(${PROJECT_NAME} SHARED src/Core/Application.cpp src/Platform/WindowsWindow.cpp src/Core/Log.cpp src/Core/Layer.cpp src/Core/LayerStack.cpp src/ImGui/ImGuiLayer.cpp src/Platform/PlatformInput.cpp src/ImGui/ImGuiBuild.cpp)
 
 target_link_libraries(${PROJECT_NAME} ${GLFW3_LIBRARY} ${OPENGL_LIBRARIES} Glad imgui)
-include_directories(${PROJECT_NAME} PRIVATE src/ PRIVATE include/ PRIVATE imgui/)
+include_directories(${PROJECT_NAME} PRIVATE src/ PRIVATE include/ PRIVATE imgui/ PRIVATE glm/)
 target_precompile_headers(${PROJECT_NAME} PUBLIC src/pch.h)
 
 add_executable(AppTest Sandbox/AppTest.cpp)

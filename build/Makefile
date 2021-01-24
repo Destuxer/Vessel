@@ -866,6 +866,33 @@ src/Core/Log.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Log.cpp.s
 .PHONY : src/Core/Log.cpp.s
 
+src/ImGui/ImGuiBuild.o: src/ImGui/ImGuiBuild.cpp.o
+
+.PHONY : src/ImGui/ImGuiBuild.o
+
+# target to build an object file
+src/ImGui/ImGuiBuild.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o
+.PHONY : src/ImGui/ImGuiBuild.cpp.o
+
+src/ImGui/ImGuiBuild.i: src/ImGui/ImGuiBuild.cpp.i
+
+.PHONY : src/ImGui/ImGuiBuild.i
+
+# target to preprocess a source file
+src/ImGui/ImGuiBuild.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.i
+.PHONY : src/ImGui/ImGuiBuild.cpp.i
+
+src/ImGui/ImGuiBuild.s: src/ImGui/ImGuiBuild.cpp.s
+
+.PHONY : src/ImGui/ImGuiBuild.s
+
+# target to generate assembly for a file
+src/ImGui/ImGuiBuild.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.s
+.PHONY : src/ImGui/ImGuiBuild.cpp.s
+
 src/ImGui/ImGuiLayer.o: src/ImGui/ImGuiLayer.cpp.o
 
 .PHONY : src/ImGui/ImGuiLayer.o
@@ -892,33 +919,6 @@ src/ImGui/ImGuiLayer.s: src/ImGui/ImGuiLayer.cpp.s
 src/ImGui/ImGuiLayer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.s
 .PHONY : src/ImGui/ImGuiLayer.cpp.s
-
-src/Platform/OpenGL/ImGuiOpenGLRenderer.o: src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o
-
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.o
-
-# target to build an object file
-src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o
-
-src/Platform/OpenGL/ImGuiOpenGLRenderer.i: src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.i
-
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.i
-
-# target to preprocess a source file
-src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.i
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.i
-
-src/Platform/OpenGL/ImGuiOpenGLRenderer.s: src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s
-
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.s
-
-# target to generate assembly for a file
-src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s
 
 src/Platform/PlatformInput.o: src/Platform/PlatformInput.cpp.o
 
@@ -1050,12 +1050,12 @@ help:
 	@echo "... src/Core/Log.o"
 	@echo "... src/Core/Log.i"
 	@echo "... src/Core/Log.s"
+	@echo "... src/ImGui/ImGuiBuild.o"
+	@echo "... src/ImGui/ImGuiBuild.i"
+	@echo "... src/ImGui/ImGuiBuild.s"
 	@echo "... src/ImGui/ImGuiLayer.o"
 	@echo "... src/ImGui/ImGuiLayer.i"
 	@echo "... src/ImGui/ImGuiLayer.s"
-	@echo "... src/Platform/OpenGL/ImGuiOpenGLRenderer.o"
-	@echo "... src/Platform/OpenGL/ImGuiOpenGLRenderer.i"
-	@echo "... src/Platform/OpenGL/ImGuiOpenGLRenderer.s"
 	@echo "... src/Platform/PlatformInput.o"
 	@echo "... src/Platform/PlatformInput.i"
 	@echo "... src/Platform/PlatformInput.s"

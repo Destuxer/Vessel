@@ -6,6 +6,8 @@
 #include "Window.h"
 #include "LayerStack.h"
 
+#include "ImGui/ImGuiLayer.h"
+
 namespace Vessel {
     class VSL_API Application {
     public:
@@ -25,6 +27,7 @@ namespace Vessel {
         bool OnWindowClose(WindowCloseEvent& e);
 
         std::unique_ptr<Window> m_Window;
+        ImGuiLayer* m_ImGuiLayer;
         bool m_Running = true;
         LayerStack m_LayerStack;
 

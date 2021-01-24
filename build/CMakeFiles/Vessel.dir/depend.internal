@@ -30,8 +30,12 @@ CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
  ../include/spdlog/tweakme.h
  ../include/spdlog/version.h
  ../src/Core/Base.h
+ ../src/Core/Layer.h
  ../src/Events/ApplicationEvent.h
  ../src/Events/Event.h
+ ../src/Events/KeyEvent.h
+ ../src/Events/MouseEvent.h
+ ../src/ImGui/ImGuiLayer.h
  ../src/pch.h
  /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
  /workspace/Vessel/src/Core/Application.cpp
@@ -97,7 +101,22 @@ CMakeFiles/Vessel.dir/src/Core/Log.cpp.o
  /workspace/Vessel/src/Core/Log.cpp
  /workspace/Vessel/src/Core/Log.h
  /workspace/Vessel/src/pch.h
+CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o
+ ../imgui/examples/imgui_impl_glfw.cpp
+ ../imgui/examples/imgui_impl_glfw.h
+ ../imgui/examples/imgui_impl_opengl3.cpp
+ ../imgui/examples/imgui_impl_opengl3.h
+ ../imgui/imconfig.h
+ ../imgui/imgui.h
+ ../include/KHR/khrplatform.h
+ ../include/glad/glad.h
+ ../src/pch.h
+ /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
+ /workspace/Vessel/src/ImGui/ImGuiBuild.cpp
+ /workspace/Vessel/src/pch.h
 CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o
+ ../imgui/examples/imgui_impl_glfw.h
+ ../imgui/examples/imgui_impl_opengl3.h
  ../imgui/imconfig.h
  ../imgui/imgui.h
  ../include/KHR/khrplatform.h
@@ -111,21 +130,11 @@ CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o
  ../src/Events/Event.h
  ../src/Events/KeyEvent.h
  ../src/Events/MouseEvent.h
- ../src/Platform/OpenGL/ImGuiOpenGLRenderer.h
+ ../src/ImGui/ImGuiLayer.h
  ../src/pch.h
  /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
  /workspace/Vessel/src/ImGui/ImGuiLayer.cpp
  /workspace/Vessel/src/ImGui/ImGuiLayer.h
- /workspace/Vessel/src/pch.h
-CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o
- ../imgui/imconfig.h
- ../imgui/imgui.h
- ../include/KHR/khrplatform.h
- ../include/glad/glad.h
- ../src/pch.h
- /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
- /workspace/Vessel/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp
- /workspace/Vessel/src/Platform/OpenGL/ImGuiOpenGLRenderer.h
  /workspace/Vessel/src/pch.h
 CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o
  ../src/Core/Application.h
@@ -136,6 +145,9 @@ CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o
  ../src/Core/Window.h
  ../src/Events/ApplicationEvent.h
  ../src/Events/Event.h
+ ../src/Events/KeyEvent.h
+ ../src/Events/MouseEvent.h
+ ../src/ImGui/ImGuiLayer.h
  ../src/pch.h
  /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
  /workspace/Vessel/src/Platform/PlatformInput.cpp

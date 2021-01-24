@@ -4,7 +4,7 @@
 # compile CXX with /bin/g++-9
 CXX_DEFINES = -DGLFW_INCLUDE_NONE -DVessel_EXPORTS
 
-CXX_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui
+CXX_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm
 
 CXX_FLAGS = -g -fPIC -std=gnu++17
 
@@ -20,9 +20,9 @@ CXX_FLAGS = -g -fPIC -std=gnu++17
 
 # PCH options: CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o_OPTIONS = -Winvalid-pch;-include;/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
 
-# PCH options: CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o_OPTIONS = -Winvalid-pch;-include;/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
-
 # PCH options: CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o_OPTIONS = -Winvalid-pch;-include;/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
 
 # PCH options: CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o_OPTIONS = -Winvalid-pch;-include;/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
+
+# PCH options: CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o_OPTIONS = -Winvalid-pch;-include;/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx
 

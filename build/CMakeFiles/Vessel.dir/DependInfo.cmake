@@ -14,10 +14,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o"
   "/workspace/Vessel/src/Core/Log.cpp" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/Core/Log.cpp.o"
   "/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/Core/Log.cpp.o"
+  "/workspace/Vessel/src/ImGui/ImGuiBuild.cpp" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o"
+  "/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o"
   "/workspace/Vessel/src/ImGui/ImGuiLayer.cpp" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o"
   "/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o"
-  "/workspace/Vessel/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o"
-  "/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o"
   "/workspace/Vessel/src/Platform/PlatformInput.cpp" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o"
   "/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o"
   "/workspace/Vessel/src/Platform/WindowsWindow.cpp" "/workspace/Vessel/build/CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o"
@@ -38,6 +38,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src"
   "../include"
   "../imgui"
+  "../glm"
   )
 
 # Targets to which this target links.
