@@ -31,6 +31,7 @@ file(GLOB SOURCES
 add_library(Glad SHARED glad/glad.c)
 
 add_library(imgui SHARED imgui/imgui.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp)
+target_link_libraries(imgui ${OPENGL_LIBRARIES} ${GLFW3_LIBRARY})
 
 add_library(${PROJECT_NAME} SHARED src/Core/Application.cpp src/Platform/WindowsWindow.cpp src/Core/Log.cpp src/Core/Layer.cpp src/Core/LayerStack.cpp src/ImGui/ImGuiLayer.cpp src/Platform/PlatformInput.cpp src/ImGui/ImGuiBuild.cpp)
 
