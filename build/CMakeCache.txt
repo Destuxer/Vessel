@@ -299,26 +299,14 @@ CVS_UPDATE_OPTIONS:STRING=-d -A -P
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
-//Value Computed by CMake
-DryBlood_BINARY_DIR:STATIC=/workspace/Vessel/build
-
-//Value Computed by CMake
-DryBlood_SOURCE_DIR:STATIC=/workspace/Vessel
-
 //Path to a program.
 GITCOMMAND:FILEPATH=/usr/bin/git
-
-//Path to a file.
-GLFW3_INCLUDE_DIR:PATH=/usr/include
-
-//Path to a library.
-GLFW3_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libglfw.so
 
 //Path to a program.
 HGCOMMAND:FILEPATH=/usr/bin/hg
 
 //Command to build the project
-MAKECOMMAND:STRING=/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+MAKECOMMAND:STRING=/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 
 //Path to the memory checking command, used for memory error detection.
 MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
@@ -339,9 +327,6 @@ OPENGL_INCLUDE_DIR:PATH=/usr/include
 OPENGL_egl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libEGL.so
 
 //Path to a library.
-OPENGL_gl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libGL.so
-
-//Path to a library.
 OPENGL_glu_LIBRARY:FILEPATH=OPENGL_glu_LIBRARY-NOTFOUND
 
 //Path to a library.
@@ -357,7 +342,7 @@ OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 P4COMMAND:FILEPATH=P4COMMAND-NOTFOUND
 
 //Name of the computer/site where compile is being run
-SITE:STRING=ws-af4e0a8c-5a0a-4a91-bcab-1344b0e24f5e
+SITE:STRING=ws-2ae15127-a90f-477e-8e3f-7acb611aea29
 
 //Path to the SLURM sbatch executable
 SLURM_SBATCH_COMMAND:FILEPATH=SLURM_SBATCH_COMMAND-NOTFOUND
@@ -572,8 +557,6 @@ CVSCOMMAND-ADVANCED:INTERNAL=1
 CVS_UPDATE_OPTIONS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
-//Details about finding GLFW3
-FIND_PACKAGE_MESSAGE_DETAILS_GLFW3:INTERNAL=[/usr/lib/x86_64-linux-gnu/libglfw.so][/usr/include][v()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
 //ADVANCED property for variable: GITCOMMAND
@@ -594,8 +577,6 @@ OPENGL_GLX_INCLUDE_DIR-ADVANCED:INTERNAL=1
 OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_egl_LIBRARY
 OPENGL_egl_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OPENGL_gl_LIBRARY
-OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_glu_LIBRARY
 OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_glx_LIBRARY

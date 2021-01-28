@@ -11,7 +11,7 @@ BuildDirectory: /workspace/Vessel/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: ws-af4e0a8c-5a0a-4a91-bcab-1344b0e24f5e
+Site: ws-2ae15127-a90f-477e-8e3f-7acb611aea29
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Linux-g++-9
@@ -27,7 +27,7 @@ NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
 ConfigureCommand: "/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake" "/workspace/Vessel"
-MakeCommand: /home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+MakeCommand: /home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
