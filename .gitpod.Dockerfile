@@ -4,4 +4,5 @@ USER root
 
 RUN apt-get update && apt-get install -y \
 libglfw3-dev \
-libgl1 
+libgl1 \
+libxinerama-dev
