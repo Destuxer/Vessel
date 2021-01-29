@@ -7,4 +7,4 @@ libglfw3-dev \
 libgl1 \
 libxinerama-dev \
 libxcursor-dev \
-libxi
+libxi-dev
