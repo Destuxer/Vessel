@@ -5,6 +5,6 @@ USER root
 RUN apt-get update && apt-get install -y \
 libglfw3-dev \
 libgl1 \
-xlib \
 libxinerama-dev \
-libxcursor-dev
+libxcursor-dev \
+libxi
