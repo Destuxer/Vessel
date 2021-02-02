@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "AppTest"
   "AppTest.pdb"
-  "CMakeFiles/AppTest.dir/AppTest.cpp.o"
+  "CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.o"
   "CMakeFiles/AppTest.dir/cmake_pch.hxx.gch"
 )
 

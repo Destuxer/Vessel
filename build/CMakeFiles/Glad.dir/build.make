@@ -98,6 +98,8 @@ Glad_EXTERNAL_OBJECTS =
 
 libGlad.so: CMakeFiles/Glad.dir/glad/glad.c.o
 libGlad.so: CMakeFiles/Glad.dir/build.make
+libGlad.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+libGlad.so: /usr/lib/x86_64-linux-gnu/libGLX.so
 libGlad.so: CMakeFiles/Glad.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libGlad.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Glad.dir/link.txt --verbose=$(VERBOSE)

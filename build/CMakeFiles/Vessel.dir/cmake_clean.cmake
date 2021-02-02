@@ -4,11 +4,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o"
   "CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o"
   "CMakeFiles/Vessel.dir/src/Core/Log.cpp.o"
+  "CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o"
   "CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o"
-  "CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o"
+  "CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o"
   "CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o"
+  "libVessel.a"
   "libVessel.pdb"
-  "libVessel.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+../imgui/imconfig.h
+
+../imgui/imgui.h
+imconfig.h
+../imgui/imconfig.h
+float.h
+-
+stdarg.h
+-
+stddef.h
+-
+string.h
+-
+assert.h
+-
+stdint.h
+-
+imgui_user.h
+../imgui/imgui_user.h
+
 ../include/spdlog/common.h
 spdlog/tweakme.h
 ../include/spdlog/spdlog/tweakme.h
@@ -333,8 +353,12 @@ Window.h
 ../src/Core/Window.h
 LayerStack.h
 ../src/Core/LayerStack.h
+ImGui/ImGuiLayer.h
+../src/Core/ImGui/ImGuiLayer.h
 
 ../src/Core/Base.h
+Platform.h
+../src/Core/Platform.h
 memory
 -
 signal.h
@@ -345,6 +369,16 @@ Core/Application.h
 ../src/Core/Core/Application.h
 Core/Log.h
 ../src/Core/Core/Log.h
+
+../src/Core/Input.h
+Base.h
+../src/Core/Base.h
+utility
+-
+
+../src/Core/KeyCodes.h
+Platform.h
+../src/Core/Platform.h
 
 ../src/Core/Layer.h
 Base.h
@@ -369,6 +403,8 @@ spdlog/spdlog.h
 -
 spdlog/fmt/ostr.h
 -
+
+../src/Core/Platform.h
 
 ../src/Core/Window.h
 pch.h
@@ -405,8 +441,6 @@ Events/KeyEvent.h
 ../src/ImGui/Events/KeyEvent.h
 Events/ApplicationEvent.h
 ../src/ImGui/Events/ApplicationEvent.h
-Events/Event.h
-../src/ImGui/Events/Event.h
 
 ../src/Vessel.h
 Core/Application.h
@@ -419,6 +453,10 @@ ImGui/ImGuiLayer.h
 ../src/ImGui/ImGuiLayer.h
 Core/Entrypoint.h
 ../src/Core/Entrypoint.h
+Core/Input.h
+../src/Core/Input.h
+Core/KeyCodes.h
+../src/Core/KeyCodes.h
 
 ../src/pch.h
 iostream
@@ -444,7 +482,9 @@ unordered_set
 windows.h
 -
 
-/workspace/Vessel/AppTest.cpp
+/workspace/Vessel/Sandbox/AppTest.cpp
+imgui.h
+/workspace/Vessel/Sandbox/imgui.h
 Vessel.h
 -
 

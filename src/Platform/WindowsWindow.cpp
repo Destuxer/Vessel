@@ -6,8 +6,6 @@
 #include "Events/KeyEvent.h"
 #include "Events/MouseEvent.h"
 
-#include "glad/glad.h"
-
 namespace Vessel {
     
     static bool s_GLFWInitialized = false;
@@ -82,6 +80,14 @@ namespace Vessel {
                 }
             }
         });
+
+        glfwSetCharCallback(m_Window, [](GLFWwindow* window, unsigned int keycode)
+		{
+			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+			KeyTypedEvent event(keycode);
+			data.EventCallback(event);
+		});
 
         glfwSetMouseButtonCallback(m_Window, [](GLFWwindow* window,int button,int action,int mods){
             WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);

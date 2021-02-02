@@ -75,6 +75,40 @@ CMAKE_BINARY_DIR = /workspace/Vessel/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -118,6 +152,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target package
 package: preinstall
@@ -174,32 +220,6 @@ AppTest: cmake_check_build_system
 AppTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/build
 .PHONY : AppTest/fast
-
-#=============================================================================
-# Target rules for targets named imgui
-
-# Build rule for target.
-imgui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
-.PHONY : imgui
-
-# fast build rule for target.
-imgui/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/build
-.PHONY : imgui/fast
-
-#=============================================================================
-# Target rules for targets named Glad
-
-# Build rule for target.
-Glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Glad
-.PHONY : Glad
-
-# fast build rule for target.
-Glad/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/build
-.PHONY : Glad/fast
 
 #=============================================================================
 # Target rules for targets named NightlyMemCheck
@@ -578,32 +598,84 @@ Vessel/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/build
 .PHONY : Vessel/fast
 
-AppTest.o: AppTest.cpp.o
+#=============================================================================
+# Target rules for targets named uninstall
 
-.PHONY : AppTest.o
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f glfw/CMakeFiles/uninstall.dir/build.make glfw/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f glfw/src/CMakeFiles/glfw.dir/build.make glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named Glad
+
+# Build rule for target.
+Glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Glad
+.PHONY : Glad
+
+# fast build rule for target.
+Glad/fast:
+	$(MAKE) $(MAKESILENT) -f glad/CMakeFiles/Glad.dir/build.make glad/CMakeFiles/Glad.dir/build
+.PHONY : Glad/fast
+
+#=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f imgui/CMakeFiles/imgui.dir/build.make imgui/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
+Sandbox/AppTest.o: Sandbox/AppTest.cpp.o
+
+.PHONY : Sandbox/AppTest.o
 
 # target to build an object file
-AppTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/AppTest.cpp.o
-.PHONY : AppTest.cpp.o
+Sandbox/AppTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.o
+.PHONY : Sandbox/AppTest.cpp.o
 
-AppTest.i: AppTest.cpp.i
+Sandbox/AppTest.i: Sandbox/AppTest.cpp.i
 
-.PHONY : AppTest.i
+.PHONY : Sandbox/AppTest.i
 
 # target to preprocess a source file
-AppTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/AppTest.cpp.i
-.PHONY : AppTest.cpp.i
+Sandbox/AppTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.i
+.PHONY : Sandbox/AppTest.cpp.i
 
-AppTest.s: AppTest.cpp.s
+Sandbox/AppTest.s: Sandbox/AppTest.cpp.s
 
-.PHONY : AppTest.s
+.PHONY : Sandbox/AppTest.s
 
 # target to generate assembly for a file
-AppTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/AppTest.cpp.s
-.PHONY : AppTest.cpp.s
+Sandbox/AppTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.s
+.PHONY : Sandbox/AppTest.cpp.s
 
 # target to build an object file
 cmake_pch.hxx.gch:
@@ -622,141 +694,6 @@ cmake_pch.hxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AppTest.dir/build.make CMakeFiles/AppTest.dir/cmake_pch.hxx.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/cmake_pch.hxx.s
 .PHONY : cmake_pch.hxx.s
-
-glad/glad.o: glad/glad.c.o
-
-.PHONY : glad/glad.o
-
-# target to build an object file
-glad/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/glad/glad.c.o
-.PHONY : glad/glad.c.o
-
-glad/glad.i: glad/glad.c.i
-
-.PHONY : glad/glad.i
-
-# target to preprocess a source file
-glad/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/glad/glad.c.i
-.PHONY : glad/glad.c.i
-
-glad/glad.s: glad/glad.c.s
-
-.PHONY : glad/glad.s
-
-# target to generate assembly for a file
-glad/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Glad.dir/build.make CMakeFiles/Glad.dir/glad/glad.c.s
-.PHONY : glad/glad.c.s
-
-imgui/imgui.o: imgui/imgui.cpp.o
-
-.PHONY : imgui/imgui.o
-
-# target to build an object file
-imgui/imgui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui.cpp.o
-.PHONY : imgui/imgui.cpp.o
-
-imgui/imgui.i: imgui/imgui.cpp.i
-
-.PHONY : imgui/imgui.i
-
-# target to preprocess a source file
-imgui/imgui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui.cpp.i
-.PHONY : imgui/imgui.cpp.i
-
-imgui/imgui.s: imgui/imgui.cpp.s
-
-.PHONY : imgui/imgui.s
-
-# target to generate assembly for a file
-imgui/imgui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui.cpp.s
-.PHONY : imgui/imgui.cpp.s
-
-imgui/imgui_demo.o: imgui/imgui_demo.cpp.o
-
-.PHONY : imgui/imgui_demo.o
-
-# target to build an object file
-imgui/imgui_demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o
-.PHONY : imgui/imgui_demo.cpp.o
-
-imgui/imgui_demo.i: imgui/imgui_demo.cpp.i
-
-.PHONY : imgui/imgui_demo.i
-
-# target to preprocess a source file
-imgui/imgui_demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.i
-.PHONY : imgui/imgui_demo.cpp.i
-
-imgui/imgui_demo.s: imgui/imgui_demo.cpp.s
-
-.PHONY : imgui/imgui_demo.s
-
-# target to generate assembly for a file
-imgui/imgui_demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.s
-.PHONY : imgui/imgui_demo.cpp.s
-
-imgui/imgui_draw.o: imgui/imgui_draw.cpp.o
-
-.PHONY : imgui/imgui_draw.o
-
-# target to build an object file
-imgui/imgui_draw.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o
-.PHONY : imgui/imgui_draw.cpp.o
-
-imgui/imgui_draw.i: imgui/imgui_draw.cpp.i
-
-.PHONY : imgui/imgui_draw.i
-
-# target to preprocess a source file
-imgui/imgui_draw.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.i
-.PHONY : imgui/imgui_draw.cpp.i
-
-imgui/imgui_draw.s: imgui/imgui_draw.cpp.s
-
-.PHONY : imgui/imgui_draw.s
-
-# target to generate assembly for a file
-imgui/imgui_draw.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.s
-.PHONY : imgui/imgui_draw.cpp.s
-
-imgui/imgui_widgets.o: imgui/imgui_widgets.cpp.o
-
-.PHONY : imgui/imgui_widgets.o
-
-# target to build an object file
-imgui/imgui_widgets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o
-.PHONY : imgui/imgui_widgets.cpp.o
-
-imgui/imgui_widgets.i: imgui/imgui_widgets.cpp.i
-
-.PHONY : imgui/imgui_widgets.i
-
-# target to preprocess a source file
-imgui/imgui_widgets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.i
-.PHONY : imgui/imgui_widgets.cpp.i
-
-imgui/imgui_widgets.s: imgui/imgui_widgets.cpp.s
-
-.PHONY : imgui/imgui_widgets.s
-
-# target to generate assembly for a file
-imgui/imgui_widgets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui.dir/build.make CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.s
-.PHONY : imgui/imgui_widgets.cpp.s
 
 src/Core/Application.o: src/Core/Application.cpp.o
 
@@ -866,6 +803,33 @@ src/Core/Log.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Core/Log.cpp.s
 .PHONY : src/Core/Log.cpp.s
 
+src/ImGui/ImGuiBuild.o: src/ImGui/ImGuiBuild.cpp.o
+
+.PHONY : src/ImGui/ImGuiBuild.o
+
+# target to build an object file
+src/ImGui/ImGuiBuild.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o
+.PHONY : src/ImGui/ImGuiBuild.cpp.o
+
+src/ImGui/ImGuiBuild.i: src/ImGui/ImGuiBuild.cpp.i
+
+.PHONY : src/ImGui/ImGuiBuild.i
+
+# target to preprocess a source file
+src/ImGui/ImGuiBuild.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.i
+.PHONY : src/ImGui/ImGuiBuild.cpp.i
+
+src/ImGui/ImGuiBuild.s: src/ImGui/ImGuiBuild.cpp.s
+
+.PHONY : src/ImGui/ImGuiBuild.s
+
+# target to generate assembly for a file
+src/ImGui/ImGuiBuild.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.s
+.PHONY : src/ImGui/ImGuiBuild.cpp.s
+
 src/ImGui/ImGuiLayer.o: src/ImGui/ImGuiLayer.cpp.o
 
 .PHONY : src/ImGui/ImGuiLayer.o
@@ -893,32 +857,32 @@ src/ImGui/ImGuiLayer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.s
 .PHONY : src/ImGui/ImGuiLayer.cpp.s
 
-src/Platform/OpenGL/ImGuiOpenGLRenderer.o: src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o
+src/Platform/PlatformInput.o: src/Platform/PlatformInput.cpp.o
 
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.o
+.PHONY : src/Platform/PlatformInput.o
 
 # target to build an object file
-src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.o
+src/Platform/PlatformInput.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o
+.PHONY : src/Platform/PlatformInput.cpp.o
 
-src/Platform/OpenGL/ImGuiOpenGLRenderer.i: src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.i
+src/Platform/PlatformInput.i: src/Platform/PlatformInput.cpp.i
 
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.i
+.PHONY : src/Platform/PlatformInput.i
 
 # target to preprocess a source file
-src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.i
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.i
+src/Platform/PlatformInput.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.i
+.PHONY : src/Platform/PlatformInput.cpp.i
 
-src/Platform/OpenGL/ImGuiOpenGLRenderer.s: src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s
+src/Platform/PlatformInput.s: src/Platform/PlatformInput.cpp.s
 
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.s
+.PHONY : src/Platform/PlatformInput.s
 
 # target to generate assembly for a file
-src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s
-.PHONY : src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp.s
+src/Platform/PlatformInput.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vessel.dir/build.make CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.s
+.PHONY : src/Platform/PlatformInput.cpp.s
 
 src/Platform/WindowsWindow.o: src/Platform/WindowsWindow.cpp.o
 
@@ -954,6 +918,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
@@ -986,31 +954,18 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
+	@echo "... uninstall"
 	@echo "... AppTest"
 	@echo "... Glad"
 	@echo "... Vessel"
+	@echo "... glfw"
 	@echo "... imgui"
-	@echo "... AppTest.o"
-	@echo "... AppTest.i"
-	@echo "... AppTest.s"
+	@echo "... Sandbox/AppTest.o"
+	@echo "... Sandbox/AppTest.i"
+	@echo "... Sandbox/AppTest.s"
 	@echo "... cmake_pch.hxx.gch"
 	@echo "... cmake_pch.hxx.i"
 	@echo "... cmake_pch.hxx.s"
-	@echo "... glad/glad.o"
-	@echo "... glad/glad.i"
-	@echo "... glad/glad.s"
-	@echo "... imgui/imgui.o"
-	@echo "... imgui/imgui.i"
-	@echo "... imgui/imgui.s"
-	@echo "... imgui/imgui_demo.o"
-	@echo "... imgui/imgui_demo.i"
-	@echo "... imgui/imgui_demo.s"
-	@echo "... imgui/imgui_draw.o"
-	@echo "... imgui/imgui_draw.i"
-	@echo "... imgui/imgui_draw.s"
-	@echo "... imgui/imgui_widgets.o"
-	@echo "... imgui/imgui_widgets.i"
-	@echo "... imgui/imgui_widgets.s"
 	@echo "... src/Core/Application.o"
 	@echo "... src/Core/Application.i"
 	@echo "... src/Core/Application.s"
@@ -1023,12 +978,15 @@ help:
 	@echo "... src/Core/Log.o"
 	@echo "... src/Core/Log.i"
 	@echo "... src/Core/Log.s"
+	@echo "... src/ImGui/ImGuiBuild.o"
+	@echo "... src/ImGui/ImGuiBuild.i"
+	@echo "... src/ImGui/ImGuiBuild.s"
 	@echo "... src/ImGui/ImGuiLayer.o"
 	@echo "... src/ImGui/ImGuiLayer.i"
 	@echo "... src/ImGui/ImGuiLayer.s"
-	@echo "... src/Platform/OpenGL/ImGuiOpenGLRenderer.o"
-	@echo "... src/Platform/OpenGL/ImGuiOpenGLRenderer.i"
-	@echo "... src/Platform/OpenGL/ImGuiOpenGLRenderer.s"
+	@echo "... src/Platform/PlatformInput.o"
+	@echo "... src/Platform/PlatformInput.i"
+	@echo "... src/Platform/PlatformInput.s"
 	@echo "... src/Platform/WindowsWindow.o"
 	@echo "... src/Platform/WindowsWindow.i"
 	@echo "... src/Platform/WindowsWindow.s"

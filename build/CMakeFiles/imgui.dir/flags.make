@@ -4,7 +4,7 @@
 # compile CXX with /bin/g++-9
 CXX_DEFINES = -DGLFW_INCLUDE_NONE -Dimgui_EXPORTS
 
-CXX_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui
+CXX_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include
 
 CXX_FLAGS = -g -fPIC -std=gnu++17
 

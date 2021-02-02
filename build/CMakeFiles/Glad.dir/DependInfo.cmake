@@ -21,6 +21,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src"
   "../include"
   "../imgui"
+  "../glm"
   )
 
 # Targets to which this target links.

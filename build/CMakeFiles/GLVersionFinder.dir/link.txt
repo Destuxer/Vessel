@@ -1,0 +1,1 @@
+/bin/g++-9 -g CMakeFiles/GLVersionFinder.dir/GladTest.cpp.o -o GLVersionFinder  -Wl,-rpath,/workspace/Vessel/build/glad glad/libGlad.so glfw/src/libglfw3.a -lpthread /usr/lib/x86_64-linux-gnu/librt.so -lm -ldl 

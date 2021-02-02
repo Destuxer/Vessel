@@ -24,10 +24,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../src"
   "../include"
   "../imgui"
+  "../glm"
+  "../glfw/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/workspace/Vessel/build/CMakeFiles/Glad.dir/DependInfo.cmake"
+  "/workspace/Vessel/build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

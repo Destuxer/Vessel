@@ -2,6 +2,7 @@
 
 #include "Core/Window.h"
 
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 namespace Vessel {
@@ -20,6 +21,8 @@ namespace Vessel {
 
         void SetVSync(bool enabled) override;
         bool IsVSync() const override;
+
+        inline virtual void* GetNativeWindow() const override {return m_Window;}
     private:
         virtual void Init(const WindowProps& props);
         virtual void Shutdown();
