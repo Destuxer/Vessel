@@ -16,6 +16,10 @@ include(CPack)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR})
 
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+
 find_package(OpenGL REQUIRED)
 include_directories(${PROJECT_NAME} PRIVATE ${OPENGL_INCLUDE_DIR})
 
@@ -23,16 +27,13 @@ file(GLOB SOURCES
     "${SOURCE_DIR}/*.h"
     "${SOURCE_DIR}/*.cpp"
 )
+add_subdirectory(glfw/)
+add_subdirectory(glad/)
 
-add_library(Glad SHARED glad/glad.c)
-target_link_libraries(Glad ${OPENGL_LIBRARIES})
+add_subdirectory(imgui/)
 
-add_library(imgui SHARED imgui/imgui.cpp imgui/imgui_draw.cpp imgui/imgui_widgets.cpp imgui/imgui_demo.cpp)
-target_link_libraries(imgui ${OPENGL_LIBRARIES} Glad)
-
-add_library(${PROJECT_NAME} SHARED src/Core/Application.cpp src/Core/Layer.cpp src/Core/LayerStack.cpp src/Core/Log.cpp src/ImGui/ImGuiBuild.cpp src/ImGui/ImGuiLayer.cpp src/Platform/WindowsWindow.cpp src/Platform/PlatformInput.cpp)
-
-target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} Glad imgui)
+add_library(${PROJECT_NAME} STATIC src/Core/Application.cpp src/Core/Layer.cpp src/Core/LayerStack.cpp src/Core/Log.cpp src/ImGui/ImGuiBuild.cpp src/ImGui/ImGuiLayer.cpp src/Platform/WindowsWindow.cpp src/Platform/PlatformInput.cpp)
+target_link_libraries(${PROJECT_NAME} ${OPENGL_LIBRARIES} Glad imgui glfw)
 include_directories(${PROJECT_NAME} PRIVATE src/ PRIVATE include/ PRIVATE imgui/ PRIVATE glm/)
 target_precompile_headers(${PROJECT_NAME} PUBLIC src/pch.h)
 

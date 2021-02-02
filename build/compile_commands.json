@@ -1,82 +1,162 @@
 [
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/gcc-9 -DGLFW_INCLUDE_NONE -DGlad_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -o CMakeFiles/Glad.dir/glad/glad.c.o -c /workspace/Vessel/glad/glad.c",
-  "file": "/workspace/Vessel/glad/glad.c"
-},
-{
-  "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -Dimgui_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -o CMakeFiles/imgui.dir/imgui/imgui.cpp.o -c /workspace/Vessel/imgui/imgui.cpp",
-  "file": "/workspace/Vessel/imgui/imgui.cpp"
-},
-{
-  "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -Dimgui_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -o CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -c /workspace/Vessel/imgui/imgui_draw.cpp",
-  "file": "/workspace/Vessel/imgui/imgui_draw.cpp"
-},
-{
-  "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -Dimgui_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -o CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -c /workspace/Vessel/imgui/imgui_widgets.cpp",
-  "file": "/workspace/Vessel/imgui/imgui_widgets.cpp"
-},
-{
-  "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -Dimgui_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -o CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o -c /workspace/Vessel/imgui/imgui_demo.cpp",
-  "file": "/workspace/Vessel/imgui/imgui_demo.cpp"
-},
-{
-  "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -Winvalid-pch -x c++-header -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/cmake_pch.hxx.gch -c /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx.cxx",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -x c++-header -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/cmake_pch.hxx.gch -c /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx.cxx",
   "file": "/workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx.cxx"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/Application.cpp.o -c /workspace/Vessel/src/Core/Application.cpp",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/Application.cpp.o -c /workspace/Vessel/src/Core/Application.cpp",
   "file": "/workspace/Vessel/src/Core/Application.cpp"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o -c /workspace/Vessel/src/Core/Layer.cpp",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o -c /workspace/Vessel/src/Core/Layer.cpp",
   "file": "/workspace/Vessel/src/Core/Layer.cpp"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o -c /workspace/Vessel/src/Core/LayerStack.cpp",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o -c /workspace/Vessel/src/Core/LayerStack.cpp",
   "file": "/workspace/Vessel/src/Core/LayerStack.cpp"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/Log.cpp.o -c /workspace/Vessel/src/Core/Log.cpp",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Core/Log.cpp.o -c /workspace/Vessel/src/Core/Log.cpp",
   "file": "/workspace/Vessel/src/Core/Log.cpp"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o -c /workspace/Vessel/src/ImGui/ImGuiBuild.cpp",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o -c /workspace/Vessel/src/ImGui/ImGuiBuild.cpp",
   "file": "/workspace/Vessel/src/ImGui/ImGuiBuild.cpp"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o -c /workspace/Vessel/src/ImGui/ImGuiLayer.cpp",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o -c /workspace/Vessel/src/ImGui/ImGuiLayer.cpp",
   "file": "/workspace/Vessel/src/ImGui/ImGuiLayer.cpp"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o -c /workspace/Vessel/src/Platform/WindowsWindow.cpp",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o -c /workspace/Vessel/src/Platform/WindowsWindow.cpp",
   "file": "/workspace/Vessel/src/Platform/WindowsWindow.cpp"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -DVessel_EXPORTS -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -fPIC -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o -c /workspace/Vessel/src/Platform/PlatformInput.cpp",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/Vessel.dir/cmake_pch.hxx -o CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o -c /workspace/Vessel/src/Platform/PlatformInput.cpp",
   "file": "/workspace/Vessel/src/Platform/PlatformInput.cpp"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -std=gnu++17 -Winvalid-pch -x c++-header -include /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx -o CMakeFiles/AppTest.dir/cmake_pch.hxx.gch -c /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx.cxx",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -x c++-header -include /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx -o CMakeFiles/AppTest.dir/cmake_pch.hxx.gch -c /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx.cxx",
   "file": "/workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx.cxx"
 },
 {
   "directory": "/workspace/Vessel/build",
-  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -g -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx -o CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.o -c /workspace/Vessel/Sandbox/AppTest.cpp",
+  "command": "/bin/g++-9 -DGLFW_INCLUDE_NONE -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include -O3 -DNDEBUG -std=gnu++17 -Winvalid-pch -include /workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx -o CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.o -c /workspace/Vessel/Sandbox/AppTest.cpp",
   "file": "/workspace/Vessel/Sandbox/AppTest.cpp"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /workspace/Vessel/glfw/src/context.c",
+  "file": "/workspace/Vessel/glfw/src/context.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o -c /workspace/Vessel/glfw/src/init.c",
+  "file": "/workspace/Vessel/glfw/src/init.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o -c /workspace/Vessel/glfw/src/input.c",
+  "file": "/workspace/Vessel/glfw/src/input.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o -c /workspace/Vessel/glfw/src/monitor.c",
+  "file": "/workspace/Vessel/glfw/src/monitor.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o -c /workspace/Vessel/glfw/src/vulkan.c",
+  "file": "/workspace/Vessel/glfw/src/vulkan.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o -c /workspace/Vessel/glfw/src/window.c",
+  "file": "/workspace/Vessel/glfw/src/window.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_init.c.o -c /workspace/Vessel/glfw/src/x11_init.c",
+  "file": "/workspace/Vessel/glfw/src/x11_init.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /workspace/Vessel/glfw/src/x11_monitor.c",
+  "file": "/workspace/Vessel/glfw/src/x11_monitor.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/x11_window.c.o -c /workspace/Vessel/glfw/src/x11_window.c",
+  "file": "/workspace/Vessel/glfw/src/x11_window.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /workspace/Vessel/glfw/src/xkb_unicode.c",
+  "file": "/workspace/Vessel/glfw/src/xkb_unicode.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_time.c.o -c /workspace/Vessel/glfw/src/posix_time.c",
+  "file": "/workspace/Vessel/glfw/src/posix_time.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/posix_thread.c.o -c /workspace/Vessel/glfw/src/posix_thread.c",
+  "file": "/workspace/Vessel/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/glx_context.c.o -c /workspace/Vessel/glfw/src/glx_context.c",
+  "file": "/workspace/Vessel/glfw/src/glx_context.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/egl_context.c.o -c /workspace/Vessel/glfw/src/egl_context.c",
+  "file": "/workspace/Vessel/glfw/src/egl_context.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /workspace/Vessel/glfw/src/osmesa_context.c",
+  "file": "/workspace/Vessel/glfw/src/osmesa_context.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glfw/src",
+  "command": "/bin/gcc-9 -D_GLFW_USE_CONFIG_H -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src -O3 -DNDEBUG -fPIC -Wall -std=c99 -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /workspace/Vessel/glfw/src/linux_joystick.c",
+  "file": "/workspace/Vessel/glfw/src/linux_joystick.c"
+},
+{
+  "directory": "/workspace/Vessel/build/glad",
+  "command": "/bin/gcc-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glad/Glad -I/workspace/Vessel/glad/PRIVATE -I/workspace/Vessel/glad/../include -O3 -DNDEBUG -o CMakeFiles/Glad.dir/glad.c.o -c /workspace/Vessel/glad/glad.c",
+  "file": "/workspace/Vessel/glad/glad.c"
+},
+{
+  "directory": "/workspace/Vessel/build/imgui",
+  "command": "/bin/g++-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/imgui.dir/imgui.cpp.o -c /workspace/Vessel/imgui/imgui.cpp",
+  "file": "/workspace/Vessel/imgui/imgui.cpp"
+},
+{
+  "directory": "/workspace/Vessel/build/imgui",
+  "command": "/bin/g++-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /workspace/Vessel/imgui/imgui_demo.cpp",
+  "file": "/workspace/Vessel/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/workspace/Vessel/build/imgui",
+  "command": "/bin/g++-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /workspace/Vessel/imgui/imgui_draw.cpp",
+  "file": "/workspace/Vessel/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/workspace/Vessel/build/imgui",
+  "command": "/bin/g++-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /workspace/Vessel/imgui/imgui_widgets.cpp",
+  "file": "/workspace/Vessel/imgui/imgui_widgets.cpp"
 }
 ]

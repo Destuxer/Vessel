@@ -28,7 +28,6 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "GLFW_INCLUDE_NONE"
-  "Vessel_EXPORTS"
   )
 
 # The include file search paths:
@@ -39,12 +38,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../imgui"
   "../glm"
+  "../glfw/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/workspace/Vessel/build/CMakeFiles/imgui.dir/DependInfo.cmake"
-  "/workspace/Vessel/build/CMakeFiles/Glad.dir/DependInfo.cmake"
+  "/workspace/Vessel/build/glad/CMakeFiles/Glad.dir/DependInfo.cmake"
+  "/workspace/Vessel/build/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
+  "/workspace/Vessel/build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

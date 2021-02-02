@@ -1,0 +1,4 @@
+{
+    "webview.trace": "on",
+    "cmake.configureOnOpen": false
+}

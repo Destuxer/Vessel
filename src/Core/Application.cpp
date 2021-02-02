@@ -1,12 +1,10 @@
-#include "ImGui/ImGuiLayer.h"
-#include "glad/glad.h"
 #include "pch.h"
 #include "Application.h"
 #include "Log.h"
 #include "Input.h"
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <GL/gl.h>
-#include <X11/keysym.h>
+
 namespace Vessel {
 
 #define BIND_EVENT_FN(x)    std::bind(&Application::x,this,std::placeholders::_1)
@@ -51,6 +49,9 @@ namespace Vessel {
 
     void Application::Run(){
         while(m_Running){
+
+            m_Window->OnUpdate();
+
             glClearColor(1, 0, 1, 1);
             glClear(GL_COLOR_BUFFER_BIT);
             
@@ -64,8 +65,6 @@ namespace Vessel {
             for(Layer* layer : m_LayerStack)
                 layer->OnImGuiRender();
             m_ImGuiLayer->End();
-            
-            m_Window->OnUpdate();
 
         }
     }

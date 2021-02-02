@@ -4,9 +4,9 @@
 # compile CXX with /bin/g++-9
 CXX_DEFINES = -DGLFW_INCLUDE_NONE
 
-CXX_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm
+CXX_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/src -I/workspace/Vessel/include -I/workspace/Vessel/imgui -I/workspace/Vessel/glm -I/workspace/Vessel/glfw/include
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17
 
 # PCH options: CMakeFiles/AppTest.dir/cmake_pch.hxx.gch_OPTIONS = -Winvalid-pch;-x;c++-header;-include;/workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx
 

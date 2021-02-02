@@ -146,8 +146,11 @@ libimgui.so: CMakeFiles/imgui.dir/build.make
 libimgui.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 libimgui.so: /usr/lib/x86_64-linux-gnu/libGLX.so
 libimgui.so: libGlad.so
+libimgui.so: glfw/src/libglfw3.a
 libimgui.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 libimgui.so: /usr/lib/x86_64-linux-gnu/libGLX.so
+libimgui.so: /usr/lib/x86_64-linux-gnu/librt.so
+libimgui.so: /usr/lib/x86_64-linux-gnu/libm.so
 libimgui.so: CMakeFiles/imgui.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libimgui.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imgui.dir/link.txt --verbose=$(VERBOSE)

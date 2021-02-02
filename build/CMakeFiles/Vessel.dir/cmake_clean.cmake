@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o"
   "CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o"
   "CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o"
+  "libVessel.a"
   "libVessel.pdb"
-  "libVessel.so"
 )
 
 # Per-language clean rules from dependency scanning.

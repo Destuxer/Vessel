@@ -6,8 +6,6 @@
 #include "Events/KeyEvent.h"
 #include "Events/MouseEvent.h"
 
-#include <glad/glad.h>
-
 namespace Vessel {
     
     static bool s_GLFWInitialized = false;

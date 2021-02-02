@@ -115,11 +115,14 @@ AppTest_EXTERNAL_OBJECTS =
 AppTest: CMakeFiles/AppTest.dir/cmake_pch.hxx.gch
 AppTest: CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.o
 AppTest: CMakeFiles/AppTest.dir/build.make
-AppTest: libVessel.so
-AppTest: libimgui.so
-AppTest: libGlad.so
+AppTest: libVessel.a
 AppTest: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 AppTest: /usr/lib/x86_64-linux-gnu/libGLX.so
+AppTest: glad/libGlad.a
+AppTest: imgui/libimgui.a
+AppTest: glfw/src/libglfw3.a
+AppTest: /usr/lib/x86_64-linux-gnu/librt.so
+AppTest: /usr/lib/x86_64-linux-gnu/libm.so
 AppTest: CMakeFiles/AppTest.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable AppTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AppTest.dir/link.txt --verbose=$(VERBOSE)
