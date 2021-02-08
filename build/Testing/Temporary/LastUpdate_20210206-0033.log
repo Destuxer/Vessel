@@ -1,0 +1,31 @@
+--- Begin Cleanup ---
+--- End Cleanup ---
+"/usr/bin/git" "rev-list" "-n" "1" "HEAD" "--"
+rl-out> ad237921fbebf54a9124a7641b27ae7baf869641
+--- Begin Update ---
+"/usr/bin/git" "fetch"
+"/usr/bin/git" "rev-parse" "--git-dir"
+rev-parse-out> .git
+FETCH_HEAD> ad237921fbebf54a9124a7641b27ae7baf869641		branch 'main' of https://github.com/Destuxer/Vessel
+"/usr/bin/git" "reset" "--hard" "ad237921fbebf54a9124a7641b27ae7baf869641"
+reset-out> HEAD is now at ad23792 Merge pull request #3 from Arc-byte/main
+"/usr/bin/git" "rev-parse" "--show-cdup"
+rev-parse-out> 
+"/usr/bin/git" "--version"
+version-out> git version 2.29.2
+"/usr/bin/git" "submodule" "sync" "--recursive"
+submodule-out> Synchronizing submodule url for 'glfw'
+"/usr/bin/git" "submodule" "update" "--recursive"
+--- End Update ---
+"/usr/bin/git" "rev-list" "-n" "1" "HEAD" "--"
+rl-out> ad237921fbebf54a9124a7641b27ae7baf869641
+--- Begin Revisions ---
+"/usr/bin/git" "rev-list" "--reverse" "ad237921fbebf54a9124a7641b27ae7baf869641..ad237921fbebf54a9124a7641b27ae7baf869641" "--" | "/usr/bin/git" "diff-tree" "--stdin" "--always" "-z" "-r" "--pretty=raw" "--encoding=utf-8"
+dt-out> 
+"/usr/bin/git" "update-index" "--refresh"
+"/usr/bin/git" "diff-index" "-z" "HEAD" "--"
+di-out> :160000 160000 4fba735d5eaa60e685195aeac8f30c1460ab2a97 4fba735d5eaa60e685195aeac8f30c1460ab2a97 M
+di-out> glfw
+di-out> :160000 160000 3cf61f67de73153e29e0c26f23d80edbaf120a3d 3cf61f67de73153e29e0c26f23d80edbaf120a3d M
+di-out> imgui
+--- End Revisions ---

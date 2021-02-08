@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++-9"
+	BuildStamp="20210206-0033-Experimental"
+	Name="ws-2ae15127-a90f-477e-8e3f-7acb611aea29"
+	Generator="ctest-3.19.2"
+	CompilerName="/bin/g++-9"
+	CompilerVersion="9.3.0"
+	OSName="Linux"
+	Hostname="ws-c2a4f393-57eb-4c55-82d4-67a7f5a7e698"
+	OSRelease="5.4.0-1024-gcp"
+	OSVersion="#24~18.04.1-Ubuntu SMP Sun Sep 6 03:37:03 UTC 2020"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="85"
+	ProcessorCacheSize="33792"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="64322"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2800.28"
+	>
+	<Build>
+		<StartDateTime>Feb 06 00:33 UTC</StartDateTime>
+		<StartBuildTime>1612571618</StartBuildTime>
+		<BuildCommand>/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake --build . --config "Release"</BuildCommand>
+		<Warning>
+			<BuildLogLine>1</BuildLogLine>
+			<Text>make[4]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.</Text>
+			<PreContext></PreContext>
+			<PostContext>[ 13%] Built target imgui
+[ 59%] Built target glfw
+Scanning dependencies of target Glad
+[ 62%] Building C object glad/CMakeFiles/Glad.dir/glad.c.o
+[ 64%] Linking C static library libGlad.a
+[ 64%] Built target Glad
+Scanning dependencies of target Vessel
+[ 67%] Building CXX object CMakeFiles/Vessel.dir/cmake_pch.hxx.gch
+[ 70%] Building CXX object CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
+[ 72%] Building CXX object CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o</PostContext>
+			<RepeatCount>0</RepeatCount>
+		</Warning>
+		<Log Encoding="base64" Compression="bin/gzip"/>
+		<EndDateTime>Feb 06 00:34 UTC</EndDateTime>
+		<EndBuildTime>1612571644</EndBuildTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Build>
+</Site>

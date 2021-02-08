@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++-9"
+	BuildStamp="20210206-0033-Experimental"
+	Name="ws-2ae15127-a90f-477e-8e3f-7acb611aea29"
+	Generator="ctest-3.19.2"
+	CompilerName="/bin/g++-9"
+	CompilerVersion="9.3.0"
+	OSName="Linux"
+	Hostname="ws-c2a4f393-57eb-4c55-82d4-67a7f5a7e698"
+	OSRelease="5.4.0-1024-gcp"
+	OSVersion="#24~18.04.1-Ubuntu SMP Sun Sep 6 03:37:03 UTC 2020"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="85"
+	ProcessorCacheSize="33792"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="64322"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2800.28"
+	>
+	<Configure>
+		<StartDateTime>Feb 06 00:33 UTC</StartDateTime>
+		<StartConfigureTime>1612571618</StartConfigureTime>
+		<ConfigureCommand>"/home/linuxbrew/.linuxbrew/Cellar/cmake/3.19.2/bin/cmake" "/workspace/Vessel"</ConfigureCommand>
+		<Log>-- Using X11 for window creation
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/Vessel/build
+</Log>
+		<ConfigureStatus>0</ConfigureStatus>
+		<EndDateTime>Feb 06 00:33 UTC</EndDateTime>
+		<EndConfigureTime>1612571618</EndConfigureTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Configure>
+</Site>

@@ -1,0 +1,24 @@
+make[4]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+[ 13%] Built target imgui
+[ 59%] Built target glfw
+Scanning dependencies of target Glad
+[ 62%] Building C object glad/CMakeFiles/Glad.dir/glad.c.o
+[ 64%] Linking C static library libGlad.a
+[ 64%] Built target Glad
+Scanning dependencies of target Vessel
+[ 67%] Building CXX object CMakeFiles/Vessel.dir/cmake_pch.hxx.gch
+[ 70%] Building CXX object CMakeFiles/Vessel.dir/src/Core/Application.cpp.o
+[ 72%] Building CXX object CMakeFiles/Vessel.dir/src/Core/Layer.cpp.o
+[ 75%] Building CXX object CMakeFiles/Vessel.dir/src/Core/LayerStack.cpp.o
+[ 78%] Building CXX object CMakeFiles/Vessel.dir/src/Core/Log.cpp.o
+[ 81%] Building CXX object CMakeFiles/Vessel.dir/src/ImGui/ImGuiBuild.cpp.o
+[ 83%] Building CXX object CMakeFiles/Vessel.dir/src/ImGui/ImGuiLayer.cpp.o
+[ 86%] Building CXX object CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o
+[ 89%] Building CXX object CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o
+[ 91%] Linking CXX static library libVessel.a
+[ 91%] Built target Vessel
+Scanning dependencies of target AppTest
+[ 94%] Building CXX object CMakeFiles/AppTest.dir/cmake_pch.hxx.gch
+[ 97%] Building CXX object CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.o
+[100%] Linking CXX executable AppTest
+[100%] Built target AppTest

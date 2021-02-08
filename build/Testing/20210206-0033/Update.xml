@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Update mode="Client" Generator="ctest-3.19.2">
+	<Site>ws-2ae15127-a90f-477e-8e3f-7acb611aea29</Site>
+	<BuildName>Linux-g++-9</BuildName>
+	<BuildStamp>20210206-0033-Continuous</BuildStamp>
+	<StartDateTime>Feb 06 00:33 UTC</StartDateTime>
+	<StartTime>1612571586</StartTime>
+	<UpdateCommand>"/usr/bin/git" "fetch"</UpdateCommand>
+	<UpdateType>GIT</UpdateType>
+	<Revision>ad237921fbebf54a9124a7641b27ae7baf869641</Revision>
+	<Directory>
+		<Name></Name>
+		<Modified>
+			<File>glfw</File>
+			<Directory></Directory>
+			<FullName>glfw</FullName>
+			<CheckinDate>Unknown</CheckinDate>
+			<Author>Unknown</Author>
+			<Email></Email>
+			<Committer></Committer>
+			<CommitterEmail></CommitterEmail>
+			<CommitDate></CommitDate>
+			<Log></Log>
+			<Revision>Unknown</Revision>
+			<PriorRevision>ad237921fbebf54a9124a7641b27ae7baf869641</PriorRevision>
+		</Modified>
+		<Modified>
+			<File>imgui</File>
+			<Directory></Directory>
+			<FullName>imgui</FullName>
+			<CheckinDate>Unknown</CheckinDate>
+			<Author>Unknown</Author>
+			<Email></Email>
+			<Committer></Committer>
+			<CommitterEmail></CommitterEmail>
+			<CommitDate></CommitDate>
+			<Log></Log>
+			<Revision>Unknown</Revision>
+			<PriorRevision>ad237921fbebf54a9124a7641b27ae7baf869641</PriorRevision>
+		</Modified>
+	</Directory>
+	<EndDateTime>Feb 06 00:33 UTC</EndDateTime>
+	<EndTime>1612571588</EndTime>
+	<ElapsedMinutes>0</ElapsedMinutes>
+	<UpdateReturnStatus>Update error: There are modified or conflicting files in the repository</UpdateReturnStatus>
+</Update>

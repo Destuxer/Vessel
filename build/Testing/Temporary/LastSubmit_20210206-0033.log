@@ -1,0 +1,10 @@
+Upload files:
+0	Update.xml
+1	Configure.xml
+2	Build.xml
+3	Test.xml
+4	Done.xml
+	Upload file: /workspace/Vessel/build/Testing/20210206-0033/Update.xml to ws-2ae15127-a90f-477e-8e3f-7acb611aea29___Linux-g++-9___20210206-0033-Experimental___XML___Update.xml
+   Error when uploading file: /workspace/Vessel/build/Testing/20210206-0033/Update.xml
+   Error message was: 
+   Problems when submitting via HTTP
