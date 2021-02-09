@@ -250,33 +250,6 @@ glad.c.s:
 	cd /workspace/Vessel/build && $(MAKE) $(MAKESILENT) -f glad/CMakeFiles/Glad.dir/build.make glad/CMakeFiles/Glad.dir/glad.c.s
 .PHONY : glad.c.s
 
-glad_glx.o: glad_glx.c.o
-
-.PHONY : glad_glx.o
-
-# target to build an object file
-glad_glx.c.o:
-	cd /workspace/Vessel/build && $(MAKE) $(MAKESILENT) -f glad/CMakeFiles/Glad.dir/build.make glad/CMakeFiles/Glad.dir/glad_glx.c.o
-.PHONY : glad_glx.c.o
-
-glad_glx.i: glad_glx.c.i
-
-.PHONY : glad_glx.i
-
-# target to preprocess a source file
-glad_glx.c.i:
-	cd /workspace/Vessel/build && $(MAKE) $(MAKESILENT) -f glad/CMakeFiles/Glad.dir/build.make glad/CMakeFiles/Glad.dir/glad_glx.c.i
-.PHONY : glad_glx.c.i
-
-glad_glx.s: glad_glx.c.s
-
-.PHONY : glad_glx.s
-
-# target to generate assembly for a file
-glad_glx.c.s:
-	cd /workspace/Vessel/build && $(MAKE) $(MAKESILENT) -f glad/CMakeFiles/Glad.dir/build.make glad/CMakeFiles/Glad.dir/glad_glx.c.s
-.PHONY : glad_glx.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -296,9 +269,6 @@ help:
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"
-	@echo "... glad_glx.o"
-	@echo "... glad_glx.i"
-	@echo "... glad_glx.s"
 .PHONY : help
 
 

@@ -492,8 +492,6 @@ Vessel.h
 /workspace/Vessel/src/pch.h
 -
 
-/workspace/Vessel/build/CMakeFiles/AppTest.dir/cmake_pch.hxx.cxx
-
 /workspace/Vessel/src/pch.h
 iostream
 -

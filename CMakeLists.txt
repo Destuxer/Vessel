@@ -29,7 +29,6 @@ file(GLOB SOURCES
 )
 add_subdirectory(glfw/)
 add_subdirectory(glad/)
-
 add_subdirectory(imgui/)
 
 add_library(${PROJECT_NAME} STATIC src/Core/Application.cpp src/Core/Layer.cpp src/Core/LayerStack.cpp src/Core/Log.cpp src/ImGui/ImGuiBuild.cpp src/ImGui/ImGuiLayer.cpp src/Platform/WindowsWindow.cpp src/Platform/PlatformInput.cpp)

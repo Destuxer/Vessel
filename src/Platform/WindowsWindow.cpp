@@ -1,6 +1,7 @@
 #include "Core/Base.h"
 #include "Core/Log.h"
 #include "GLFW/glfw3.h"
+#include "Platform/OpenGL/OpenGLContext.h"
 #include "pch.h"
 #include "WindowsWindow.h"
 #include "Events/ApplicationEvent.h"
@@ -41,11 +42,8 @@ namespace Vessel {
         }
         m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
         glfwMakeContextCurrent(m_Window);
-        int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-        int statusx = gladLoadGLXLoader((GLADloadproc)glfwGetProcAddress,m_Display,0);
-        VSL_CORE_ASSERT(status,"Failed to initialize Glad!");
-        VSL_CORE_ASSERT(statusx,"Failed to initialize Glad and GLX!");
-        glfwSetWindowUserPointer(m_Window,&m_Data);
+        m_Context = new OpenGLContext(m_Window);
+		m_Context->Init();
         SetVSync(true);
 
         glfwSetWindowSizeCallback(m_Window, [](GLFWwindow* window, int width, int height){
@@ -127,7 +125,7 @@ namespace Vessel {
 
     void WindowsWindow::OnUpdate(){
         glfwPollEvents();
-        glfwSwapBuffers(m_Window);
+        m_Context->SwapBuffers();
     }
 
     void WindowsWindow::SetVSync(bool enabled){

@@ -5,8 +5,3 @@ glad/CMakeFiles/Glad.dir/glad.c.o: ../include/KHR/khrplatform.h
 glad/CMakeFiles/Glad.dir/glad.c.o: ../include/glad/glad.h
 glad/CMakeFiles/Glad.dir/glad.c.o: ../glad/glad.c
 
-glad/CMakeFiles/Glad.dir/glad_glx.c.o: ../include/KHR/khrplatform.h
-glad/CMakeFiles/Glad.dir/glad_glx.c.o: ../include/glad/glad.h
-glad/CMakeFiles/Glad.dir/glad_glx.c.o: ../include/glad/glad_glx.h
-glad/CMakeFiles/Glad.dir/glad_glx.c.o: ../glad/glad_glx.c
-

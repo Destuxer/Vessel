@@ -140,9 +140,9 @@
   "file": "/workspace/Vessel/glad/glad.c"
 },
 {
-  "directory": "/workspace/Vessel/build/glad",
-  "command": "/bin/gcc-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glad/Glad -I/workspace/Vessel/glad/PRIVATE -I/workspace/Vessel/glad/../include -g -o CMakeFiles/Glad.dir/glad_glx.c.o -c /workspace/Vessel/glad/glad_glx.c",
-  "file": "/workspace/Vessel/glad/glad_glx.c"
+  "directory": "/workspace/Vessel/build/imgui",
+  "command": "/bin/g++-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -g -std=gnu++17 -o CMakeFiles/imgui.dir/imgui.cpp.o -c /workspace/Vessel/imgui/imgui.cpp",
+  "file": "/workspace/Vessel/imgui/imgui.cpp"
 },
 {
   "directory": "/workspace/Vessel/build/imgui",
@@ -151,17 +151,12 @@
 },
 {
   "directory": "/workspace/Vessel/build/imgui",
-  "command": "/bin/g++-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -g -std=gnu++17 -o CMakeFiles/imgui.dir/imgui.cpp.o -c /workspace/Vessel/imgui/imgui.cpp",
-  "file": "/workspace/Vessel/imgui/imgui.cpp"
+  "command": "/bin/g++-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -g -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /workspace/Vessel/imgui/imgui_widgets.cpp",
+  "file": "/workspace/Vessel/imgui/imgui_widgets.cpp"
 },
 {
   "directory": "/workspace/Vessel/build/imgui",
   "command": "/bin/g++-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -g -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /workspace/Vessel/imgui/imgui_draw.cpp",
   "file": "/workspace/Vessel/imgui/imgui_draw.cpp"
-},
-{
-  "directory": "/workspace/Vessel/build/imgui",
-  "command": "/bin/g++-9  -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -g -std=gnu++17 -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /workspace/Vessel/imgui/imgui_widgets.cpp",
-  "file": "/workspace/Vessel/imgui/imgui_widgets.cpp"
 }
 ]

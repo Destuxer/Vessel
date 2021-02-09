@@ -89,32 +89,17 @@ glad/CMakeFiles/Glad.dir/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Glad.dir/glad.c.s"
 	cd /workspace/Vessel/build/glad && /bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/Vessel/glad/glad.c -o CMakeFiles/Glad.dir/glad.c.s
 
-glad/CMakeFiles/Glad.dir/glad_glx.c.o: glad/CMakeFiles/Glad.dir/flags.make
-glad/CMakeFiles/Glad.dir/glad_glx.c.o: ../glad/glad_glx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object glad/CMakeFiles/Glad.dir/glad_glx.c.o"
-	cd /workspace/Vessel/build/glad && /bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Glad.dir/glad_glx.c.o -c /workspace/Vessel/glad/glad_glx.c
-
-glad/CMakeFiles/Glad.dir/glad_glx.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Glad.dir/glad_glx.c.i"
-	cd /workspace/Vessel/build/glad && /bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/Vessel/glad/glad_glx.c > CMakeFiles/Glad.dir/glad_glx.c.i
-
-glad/CMakeFiles/Glad.dir/glad_glx.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Glad.dir/glad_glx.c.s"
-	cd /workspace/Vessel/build/glad && /bin/gcc-9 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/Vessel/glad/glad_glx.c -o CMakeFiles/Glad.dir/glad_glx.c.s
-
 # Object files for target Glad
 Glad_OBJECTS = \
-"CMakeFiles/Glad.dir/glad.c.o" \
-"CMakeFiles/Glad.dir/glad_glx.c.o"
+"CMakeFiles/Glad.dir/glad.c.o"
 
 # External object files for target Glad
 Glad_EXTERNAL_OBJECTS =
 
 glad/libGlad.a: glad/CMakeFiles/Glad.dir/glad.c.o
-glad/libGlad.a: glad/CMakeFiles/Glad.dir/glad_glx.c.o
 glad/libGlad.a: glad/CMakeFiles/Glad.dir/build.make
 glad/libGlad.a: glad/CMakeFiles/Glad.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libGlad.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libGlad.a"
 	cd /workspace/Vessel/build/glad && $(CMAKE_COMMAND) -P CMakeFiles/Glad.dir/cmake_clean_target.cmake
 	cd /workspace/Vessel/build/glad && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Glad.dir/link.txt --verbose=$(VERBOSE)
 

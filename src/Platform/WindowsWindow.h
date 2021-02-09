@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core/Window.h"
+#include "Renderer/GraphicsContext.h"
 #include <X11/Xlib.h>
 #include <glad/glad.h>
 #include <glad/glad_glx.h>
@@ -29,7 +30,7 @@ namespace Vessel {
         virtual void Shutdown();
     private:
         GLFWwindow* m_Window;
-        Display* m_Display;
+        GraphicsContext* m_Context;
 
         struct WindowData {
             std::string Title;

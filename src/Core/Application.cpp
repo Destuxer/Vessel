@@ -83,9 +83,6 @@ namespace Vessel {
             
             for(Layer* layer : m_LayerStack)
                 layer->OnUpdate();
-            
-            auto[x,y] = Input::GetMousePosition();
-            VSL_CORE_TRACE("{0}, {1}",x,y);
 
             m_ImGuiLayer->Begin();
             for(Layer* layer : m_LayerStack)

@@ -116,9 +116,9 @@ AppTest: CMakeFiles/AppTest.dir/cmake_pch.hxx.gch
 AppTest: CMakeFiles/AppTest.dir/Sandbox/AppTest.cpp.o
 AppTest: CMakeFiles/AppTest.dir/build.make
 AppTest: libVessel.a
+AppTest: glad/libGlad.a
 AppTest: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 AppTest: /usr/lib/x86_64-linux-gnu/libGLX.so
-AppTest: glad/libGlad.a
 AppTest: imgui/libimgui.a
 AppTest: glfw/src/libglfw3.a
 AppTest: /usr/lib/x86_64-linux-gnu/librt.so
