@@ -8,7 +8,7 @@ libgl1 \
 libxinerama-dev \
 libxcursor-dev \
 libxi-dev \
-libglx
+libgl1-mesa-glx
 
 USER gitpod
 
