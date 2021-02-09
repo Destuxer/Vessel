@@ -76,22 +76,9 @@ include imgui/CMakeFiles/imgui.dir/progress.make
 # Include the compile flags for this target's objects.
 include imgui/CMakeFiles/imgui.dir/flags.make
 
-imgui/CMakeFiles/imgui.dir/imgui.cpp.o: imgui/CMakeFiles/imgui.dir/flags.make
-imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../imgui/imgui.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object imgui/CMakeFiles/imgui.dir/imgui.cpp.o"
-	cd /workspace/Vessel/build/imgui && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imgui.dir/imgui.cpp.o -c /workspace/Vessel/imgui/imgui.cpp
-
-imgui/CMakeFiles/imgui.dir/imgui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui.cpp.i"
-	cd /workspace/Vessel/build/imgui && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/Vessel/imgui/imgui.cpp > CMakeFiles/imgui.dir/imgui.cpp.i
-
-imgui/CMakeFiles/imgui.dir/imgui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui.cpp.s"
-	cd /workspace/Vessel/build/imgui && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/Vessel/imgui/imgui.cpp -o CMakeFiles/imgui.dir/imgui.cpp.s
-
 imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: imgui/CMakeFiles/imgui.dir/flags.make
 imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: ../imgui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o"
 	cd /workspace/Vessel/build/imgui && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /workspace/Vessel/imgui/imgui_demo.cpp
 
 imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.i: cmake_force
@@ -101,6 +88,19 @@ imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.i: cmake_force
 imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui_demo.cpp.s"
 	cd /workspace/Vessel/build/imgui && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/Vessel/imgui/imgui_demo.cpp -o CMakeFiles/imgui.dir/imgui_demo.cpp.s
+
+imgui/CMakeFiles/imgui.dir/imgui.cpp.o: imgui/CMakeFiles/imgui.dir/flags.make
+imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/workspace/Vessel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object imgui/CMakeFiles/imgui.dir/imgui.cpp.o"
+	cd /workspace/Vessel/build/imgui && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imgui.dir/imgui.cpp.o -c /workspace/Vessel/imgui/imgui.cpp
+
+imgui/CMakeFiles/imgui.dir/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui.cpp.i"
+	cd /workspace/Vessel/build/imgui && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/Vessel/imgui/imgui.cpp > CMakeFiles/imgui.dir/imgui.cpp.i
+
+imgui/CMakeFiles/imgui.dir/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui.cpp.s"
+	cd /workspace/Vessel/build/imgui && /bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/Vessel/imgui/imgui.cpp -o CMakeFiles/imgui.dir/imgui.cpp.s
 
 imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: imgui/CMakeFiles/imgui.dir/flags.make
 imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../imgui/imgui_draw.cpp
@@ -130,16 +130,16 @@ imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.s: cmake_force
 
 # Object files for target imgui
 imgui_OBJECTS = \
-"CMakeFiles/imgui.dir/imgui.cpp.o" \
 "CMakeFiles/imgui.dir/imgui_demo.cpp.o" \
+"CMakeFiles/imgui.dir/imgui.cpp.o" \
 "CMakeFiles/imgui.dir/imgui_draw.cpp.o" \
 "CMakeFiles/imgui.dir/imgui_widgets.cpp.o"
 
 # External object files for target imgui
 imgui_EXTERNAL_OBJECTS =
 
-imgui/libimgui.a: imgui/CMakeFiles/imgui.dir/imgui.cpp.o
 imgui/libimgui.a: imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o
+imgui/libimgui.a: imgui/CMakeFiles/imgui.dir/imgui.cpp.o
 imgui/libimgui.a: imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o
 imgui/libimgui.a: imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o
 imgui/libimgui.a: imgui/CMakeFiles/imgui.dir/build.make

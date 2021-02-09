@@ -1,4 +1,3 @@
-#include "glad/glad.h"
 #include "Core/Base.h"
 #include "pch.h"
 #include "OpenGLContext.h"

@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glad/Glad -I/workspace/Vessel/glad/PRIVATE -I/workspace/Vessel/glad/../include
 
-C_FLAGS = -O3 -DNDEBUG
+C_FLAGS = -g
 

@@ -5,3 +5,8 @@ glad/CMakeFiles/Glad.dir/glad.c.o
  ../include/KHR/khrplatform.h
  ../include/glad/glad.h
  /workspace/Vessel/glad/glad.c
+glad/CMakeFiles/Glad.dir/glad_glx.c.o
+ ../include/KHR/khrplatform.h
+ ../include/glad/glad.h
+ ../include/glad/glad_glx.h
+ /workspace/Vessel/glad/glad_glx.c

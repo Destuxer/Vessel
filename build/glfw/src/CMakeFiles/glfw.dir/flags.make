@@ -6,7 +6,7 @@ C_DEFINES = -D_GLFW_USE_CONFIG_H
 
 C_INCLUDES = -I/workspace/Vessel/Vessel -I/workspace/Vessel/PRIVATE -I/workspace/Vessel/glfw/include -I/workspace/Vessel/glfw/src -I/workspace/Vessel/build/glfw/src
 
-C_FLAGS = -O3 -DNDEBUG -fPIC -Wall -std=c99
+C_FLAGS = -g -fPIC -Wall -std=c99
 
 # Custom flags: glfw/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

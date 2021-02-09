@@ -168,6 +168,7 @@ CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o
  ../glfw/include/GLFW/glfw3.h
  ../include/KHR/khrplatform.h
  ../include/glad/glad.h
+ ../include/glad/glad_glx.h
  ../include/spdlog/common.h
  ../include/spdlog/details/fmt_helper.h
  ../include/spdlog/details/log_msg.h

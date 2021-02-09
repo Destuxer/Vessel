@@ -1,8 +1,9 @@
 #pragma once
 
 #include "Core/Window.h"
-
+#include <X11/Xlib.h>
 #include <glad/glad.h>
+#include <glad/glad_glx.h>
 #include <GLFW/glfw3.h>
 
 namespace Vessel {
@@ -28,6 +29,7 @@ namespace Vessel {
         virtual void Shutdown();
     private:
         GLFWwindow* m_Window;
+        Display* m_Display;
 
         struct WindowData {
             std::string Title;

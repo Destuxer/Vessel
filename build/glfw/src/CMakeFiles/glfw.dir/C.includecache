@@ -110,8 +110,6 @@ assert.h
 EGL/eglplatform.h
 -
 
-/workspace/Vessel/glfw/src/glfw_config.h
-
 /workspace/Vessel/glfw/src/glx_context.c
 internal.h
 /workspace/Vessel/glfw/src/internal.h
@@ -459,4 +457,6 @@ internal.h
 /workspace/Vessel/glfw/src/internal.h
 
 /workspace/Vessel/glfw/src/xkb_unicode.h
+
+glfw/src/glfw_config.h
 

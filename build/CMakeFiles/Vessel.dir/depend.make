@@ -167,6 +167,7 @@ CMakeFiles/Vessel.dir/src/Platform/PlatformInput.cpp.o: ../src/pch.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../glfw/include/GLFW/glfw3.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/KHR/khrplatform.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/glad/glad.h
+CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/glad/glad_glx.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/spdlog/common.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/spdlog/details/fmt_helper.h
 CMakeFiles/Vessel.dir/src/Platform/WindowsWindow.cpp.o: ../include/spdlog/details/log_msg.h
